@@ -130,6 +130,62 @@
 #define ARMOR_INT_SIDE_GOLDPLUS 10 // Integrity for royal variants of golden / cermemonial pieces
 #define ARMOR_INT_SIDE_GOLD 5 // Integrity for golden / ceremonial pieces
 
+/*============================\
+||							 ||
+||  INTEGRITY MACRO DEFINES	 ||
+||							 ||
+\============================*/
+
+// Makes it easy to scale integrity without an absurd amount of defines.
+
+// Zero integrity define, self-explanatory.
+// Usually for types that shouldnt break.
+#define INT_TIER_NONE 0
+
+
+/*
+Low integrity define macro, step size of 5.
+For types that should be easily damaged.
+Example;
+INT_TIER_LOW(1) = 5
+INT_TIER_LOW(2) = 10
+INT_TIER_LOW(3) = 15
+*/
+#define INT_TIER_LOW(n) (5 + ((n - 1) * 5))
+
+
+/* 
+Medium integrity defines, step size of 25.
+Probably for most types in the game.
+Example;
+INT_TIER_MEDIUM(1) = 25
+INT_TIER_MEDIUM(2) = 50
+INT_TIER_MEDIUM(3) = 75
+*/
+#define INT_TIER_MEDIUM(n) (25 + ((n - 1) * 25))
+
+
+/* 
+High integrity defines, step size of 100.
+Use for durable types, like strong weapons and armor.
+Example;
+INT_TIER_HIGH_ONE = 100
+INT_TIER_HIGH_TWO = 200
+INT_TIER_HIGH_THREE = 300
+*/
+#define INT_TIER_HIGH(n) (100 + ((n - 1) * 100))
+
+
+/* 
+Ultra integrity defines, step size of 500.
+Use sparingly for exceedingly durable types.
+Example;
+INT_TIER_ULTRA_ONE = 500
+INT_TIER_ULTRA_TWO = 1000
+INT_TIER_ULTRA_THREE = 1500
+*/
+#define INT_TIER_ULTRA(n) (500 + ((n - 1) * 500))
+
 /*--------------------\
 | ARMOR VALUE DEFINES |
 \--------------------*/
