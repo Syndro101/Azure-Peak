@@ -61,13 +61,6 @@
 
 // Chest / Armor Pieces
 
-// LIGHT
-#define ARMOR_INT_CHEST_LIGHT_MASTER 300 // High tier cloth / leather armor
-#define ARMOR_INT_CHEST_LIGHT_MEDIUM 250 // Medium tier cloth / leather armor
-#define ARMOR_INT_CHEST_LIGHT_BASE 200
-#define ARMOR_INT_CHEST_LIGHT_STEEL 180
-#define ARMOR_INT_CHEST_CLOTH 100
-
 // LEG PIECES - Leg Armor
 #define ARMOR_INT_LEG_ANTAG 600
 #define ARMOR_INT_LEG_BLACKSTEEL 500

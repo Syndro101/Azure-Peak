@@ -44,7 +44,7 @@
 	icon_state = "eastsuit2"
 	item_state = "eastsuit2"
 	armor = ARMOR_LEATHER // Makes it the equivalence of studded with less integrity and better armor 
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 
 //craftable variation of eastsuit, essentially requiring the presence of a tailor with relevant materials
 //still weak against blunt
@@ -56,7 +56,7 @@
 	item_state = "eastsuit1"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	armor = ARMOR_LEATHER 
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 
 /obj/item/clothing/suit/roguetown/armor/plate/elven_plate
 	name = "woad elven plate"

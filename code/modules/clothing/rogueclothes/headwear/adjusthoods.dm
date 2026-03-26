@@ -400,7 +400,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	blocksound = SOFTHIT
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	dynamic_hair_suffix = ""
 	edelay_type = 1
 	adjustable = CAN_CADJUST

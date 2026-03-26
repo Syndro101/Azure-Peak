@@ -60,7 +60,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/light/fencer
 	name = "besilked haubergeon"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_STEEL //Matching the Fencer Cuirass.
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS //Matching the Fencer Cuirass.
 
 //HAUBERK//
 

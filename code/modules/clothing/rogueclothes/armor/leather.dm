@@ -10,7 +10,7 @@
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	sewrepair = TRUE
 	nodismemsleeves = TRUE
-	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
+	max_integrity = INT_TIER_MEDIUM(8)
 	sellprice = 20
 	armor_class = ARMOR_CLASS_LIGHT
 	salvage_result = /obj/item/natural/hide/cured
@@ -62,14 +62,14 @@
 	name = "leather cuirass"
 	desc = "A leather cuirass."
 	icon_state = "leather"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	color = "#7D6653"
 
 /obj/item/clothing/suit/roguetown/armor/leather/hide
 	name = "hide armor"
 	desc = "A furred vest, stitched from the hide of a forest-dwelling beaste."
 	icon_state = "hidearmor"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	name = "forester's armor"
@@ -95,7 +95,7 @@
 	armor = ARMOR_LEATHER
 	nodismemsleeves = TRUE
 	body_parts_covered = COVERAGE_TORSO
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	smeltresult = /obj/item/ingot/iron
 	sellprice = 25
 	armor_class = ARMOR_CLASS_LIGHT
@@ -112,7 +112,7 @@
 	blacksteel-studded reinforcements and psystitchings're anything to go by, this particular vest was likely fashioned to vestume Otava's finest. "
 	icon_state = "cuirbouilli"
 	item_state = "cuirbouilli"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER + 30
+	max_integrity = INT_TIER_HIGH(3) + INT_TEMPERED_BONUS
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded/cuirbouilli
 	name = "cuir-bouilli vest"
@@ -122,7 +122,7 @@
 	item_state = "cuirbouilli"
 	body_parts_covered = CHEST | VITALS
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER - 30
+	max_integrity = INT_TIER_HIGH(3) - INT_BRITTLE_MALUS
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy
 	name = "hardened leather armor"
@@ -131,7 +131,7 @@
 	icon_state = "leather_armor"
 	item_state = "leather_armor"
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 20
 	color = "#7D6653"
 
@@ -142,7 +142,7 @@
 	item_state = "roguearmor_coat"
 	body_parts_covered = COVERAGE_ALL_BUT_ARMFEET
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 25
 	color = "#7D6653"
 
@@ -154,7 +154,7 @@
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
+	max_integrity = INT_TIER_MEDIUM(8)
 	color = null
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/raneshen
@@ -176,7 +176,7 @@
 	desc = "A padded coat bearing the same hues one would find on a Necran. Small steel braces adorn the wrists, a symbol of Necra's grasp on those who serve her."
 	icon_state = "gravecoat"
 	item_state = "gravecoat"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
+	max_integrity = INT_TIER_MEDIUM(8)
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET
 	color = null
 
@@ -187,7 +187,7 @@
 	item_state = "leatherjacketo"
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 25
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/shadowvest
@@ -207,7 +207,7 @@
 	desc = "A light, flexible button-up leather jacket that will keep your vitals out of harm's way."
 	icon_state = "freijacket"
 	item_state = "freijacket"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM + 35
+	max_integrity = INT_TIER_MEDIUM(10) + INT_TEMPERED_BONUS
 	detail_tag = "_detail"
 	color = "#5E4440"
 	detail_color = "#c08955"
@@ -230,7 +230,7 @@
 	desc = "A light, flexible leather vest worn by shepherds in the forested peaks of Aavnr."
 	icon_state = "freijacket"
 	item_state = "freijacket"
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 	color = "#313131"
 
 /obj/item/clothing/suit/roguetown/armor/leather/trophyfur
@@ -239,7 +239,7 @@
 	icon_state = "hatanga"
 	item_state = "hatanga"
 	armor = ARMOR_PADDED // Trophy fur — treated leather, gambeson equivalent
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 100
 
 /obj/item/clothing/suit/roguetown/armor/leather/bikini

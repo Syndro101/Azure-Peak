@@ -65,7 +65,7 @@
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	blocksound = SOFTHIT
 	body_parts_covered = NECK|MOUTH|NOSE|HAIR|EARS|HEAD
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER //padded gambeson durability
+	max_integrity = INT_TIER_HIGH(3) //padded gambeson durability
 	armor = ARMOR_PADDED //full padded gambeson basically
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE

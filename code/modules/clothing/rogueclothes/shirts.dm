@@ -144,7 +144,7 @@
 /obj/item/clothing/suit/roguetown/shirt/shadowshirt/elflock
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	body_parts_covered = COVERAGE_ALL_BUT_ARMFEET
-	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
+	max_integrity = INT_TIER_MEDIUM(8)
 	armor = ARMOR_PADDED
 
 /obj/item/clothing/suit/roguetown/shirt/shadowshirt/elflock/drowraider

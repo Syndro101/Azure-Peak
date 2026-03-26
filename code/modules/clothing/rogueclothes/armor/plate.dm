@@ -517,7 +517,7 @@
 	desc = "An expertly smithed form-fitting steel cuirass that is much lighter and agile, but breaks with much more ease. It's thinner, but backed with silk and leather."
 	armor = ARMOR_PLATE		// Experimental.
 	armor_class = ARMOR_CLASS_LIGHT
-	max_integrity = ARMOR_INT_CHEST_LIGHT_STEEL
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS
 	smelt_bar_num = 1
 	icon_state = "fencercuirass"
 	item_state = "fencercuirass"
@@ -531,7 +531,7 @@
 	name = "psydonic chestplate"
 	desc = "An expertly smithed form-fitting steel cuirass that is much lighter and agile, but breaks with much more ease. It's thinner, but backed with silk and leather."
 	smelt_bar_num = 1
-	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
+	max_integrity = INT_TIER_MEDIUM(8)
 	smeltresult = /obj/item/ingot/silverblessed
 	icon_state = "ornatechestplate"
 	item_state = "ornatechestplate"

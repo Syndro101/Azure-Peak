@@ -54,7 +54,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	blocksound = PLATEHIT
 	armor = ARMOR_DRAGONHIDE
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET | COVERAGE_HEAD_NOSE | NECK | HANDS | FEET
 	unenchantable = TRUE
 	var/obj/effect/proc_holder/spell/self/conjure_armor/linked_conjure_spell

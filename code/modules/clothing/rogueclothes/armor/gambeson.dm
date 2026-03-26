@@ -9,7 +9,7 @@
 	armor = ARMOR_PADDED
 	blocksound = SOFTUNDERHIT
 	blade_dulling = DULLING_BASHCHOP
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	sewrepair = TRUE
@@ -47,7 +47,7 @@
 	name = "light gambeson"
 	desc = "A light and insulative jacket, hewn from cloth. Peasants tend to wear these in the colder months, though they've also been repurposed - by more desperate hands - as armor-padding."
 	armor = ARMOR_PADDED_BAD
-	max_integrity = ARMOR_INT_CHEST_LIGHT_BASE
+	max_integrity = INT_TIER_MEDIUM(8)
 	sellprice = 10
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/lord/heavy
@@ -56,7 +56,7 @@
 	icon_state = "dgamb"
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
 	armor = ARMOR_PADDED
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/lord/heavy/silkjacket
 	name = "besilked jacket"
@@ -70,7 +70,7 @@
 	desc = "A heavyweight jacket, further tightened with dorpel-styled stitchwork. On its own, it is a masterwork that can reduce a crushing blow into a slight tickle; beneath an alloyed chestplate, it can ward off anything short of a greater fireball."
 	icon_state = "gambesonp"
 	armor = ARMOR_PADDED
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 25
 	color = "#976E6B"
 	var/shiftable = TRUE
@@ -155,7 +155,7 @@
 	color = "#FFFFFF"
 	var/shiftable = FALSE
 	armor = ARMOR_PADDED
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER + 35
+	max_integrity = INT_TIER_HIGH(3) + INT_TEMPERED_BONUS
 	sellprice = 25
 	blocksound = SOFTUNDERHIT
 	blade_dulling = DULLING_BASHCHOP
@@ -171,7 +171,7 @@
 /obj/item/clothing/suit/roguetown/shirt/freifechter/shepherd
 	name = "shepherd's shirt"
 	desc = "A strong loosely worn quilted shirt that places little weight on the arms."
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MASTER - 35
+	max_integrity = INT_TIER_HIGH(3) - INT_BRITTLE_MALUS
 
 /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
 	name = "padded caftan"
@@ -191,7 +191,7 @@
 	boobed = FALSE // Temporary fix, set to FALSE because for some reason boobed and details don't want to work together, removing the ability to dye it or it's details for the onmob
 	detail_tag = "_detail"
 	detail_color = CLOTHING_WHITE
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM
+	max_integrity = INT_TIER_MEDIUM(10)
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	color = "#1d1d22"
@@ -259,4 +259,4 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	icon_state = "shadowrobe"
 	armor = ARMOR_PADDED
-	max_integrity = ARMOR_INT_CHEST_LIGHT_MEDIUM + 30 //280
+	max_integrity = INT_TIER_MEDIUM(10) + INT_TEMPERED_BONUS
