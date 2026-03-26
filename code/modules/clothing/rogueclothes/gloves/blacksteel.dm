@@ -10,5 +10,5 @@
 	icon_state = "bkgloves"
 	item_state = "bkgloves"
 	armor = ARMOR_PLATE_BSTEEL
-	max_integrity = ARMOR_INT_SIDE_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(4)
 	smeltresult = /obj/item/ingot/blacksteel

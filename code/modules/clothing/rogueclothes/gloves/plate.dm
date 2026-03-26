@@ -5,7 +5,7 @@
 	armor = ARMOR_PLATE
 	resistance_flags = FIRE_PROOF
 	blocksound = PLATEHIT
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	blade_dulling = DULLING_BASH
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
@@ -27,13 +27,13 @@
 	desc = "A pair of armored gauntlets. The joints, though simplistic, nevertheless allow for the strumming of both a bowstring and lute."
 	icon_state = "igauntlets"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 
 /obj/item/clothing/gloves/roguetown/plate/aalloy
 	name = "decrepit plate gauntlets"
 	desc = "Frayed bronze mechanisms, connected to form the shells of hands. Too clumsy to properly knock a bow, too rigid to comfortably grip a sword; clench those fists any tighter, and the segments'll cut into flesh."
 	icon_state = "agauntlets"
-	max_integrity = ARMOR_INT_SIDE_DECREPIT
+	max_integrity = INT_TIER_MEDIUM(10) - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_PLATE
@@ -49,7 +49,7 @@
 /obj/item/clothing/gloves/roguetown/plate/graggar
 	name = "vicious gauntlets"
 	desc = "Fluted gauntlets, razor-tipped and fluidic in motion. Most are led to believe that 'might makes right', yet Graggar's truth is far more succinct - 'might makes'. Murder is the ultimate force; the only difference between you and them is that they're too afraid to admit it."
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	icon_state = "graggarplategloves"
 
 /obj/item/clothing/gloves/roguetown/plate/graggar/Initialize()
@@ -60,7 +60,7 @@
 	name = "gilded gauntlets"
 	desc = "Many a man his life hath sold,"
 	icon_state = "matthiosgloves"
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 
 /obj/item/clothing/gloves/roguetown/plate/matthios/Initialize()
 	. = ..()
@@ -77,7 +77,7 @@
 	name = "avantyne gauntlets"
 	desc = "Unknowing truths, veiling the hands that prayed. Called forth from the edge of what should be known, in Her name."
 	icon_state = "zizogauntlets"
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	chunkcolor = "#363030"
 	material_category = ARMOR_MAT_PLATE
 

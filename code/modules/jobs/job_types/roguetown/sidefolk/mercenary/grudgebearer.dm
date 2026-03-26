@@ -182,7 +182,7 @@
 	icon_state = "dwarfhand"
 	item_state = "dwarfhand"
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 
 /obj/item/clothing/shoes/roguetown/boots/armor/dwarven
 	name = "grudgebearer dwarven boots"
@@ -193,6 +193,6 @@
 	icon_state = "dwarfshoe"
 	item_state = "dwarfshoe"
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 
 

@@ -4,7 +4,7 @@
 	desc = "A pair of gloves, stitched together from cured leather."
 	icon_state = "leather_gloves"
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_SIDE_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
@@ -47,7 +47,7 @@
 	desc = "Cloth gloves to absorb palm sweat while leaving the fingers free for fine manipulation."
 	icon_state = "shadowgloves"
 	armor = ARMOR_MAILLE
-	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	allowed_race = NON_DWARVEN_RACE_TYPES
 
 /obj/item/clothing/gloves/roguetown/fingerless_leather
@@ -58,7 +58,7 @@
 	armor = ARMOR_LEATHER
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_SIDE_CLOTH
+	max_integrity = INT_TIER_MEDIUM(4)
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
@@ -74,7 +74,7 @@
 	armor = ARMOR_MAILLE
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'

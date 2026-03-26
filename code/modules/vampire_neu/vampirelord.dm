@@ -224,7 +224,7 @@
 	item_state = "vpants"
 	sewrepair = FALSE
 	armor = ARMOR_VAMP
-	max_integrity = ARMOR_INT_LEG_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	blocksound = PLATEHIT
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -238,7 +238,7 @@
 	body_parts_inherent = FULL_BODY
 	icon_state = "vboots"
 	item_state = "vboots"
-	max_integrity = ARMOR_INT_LEG_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	color = null
 	blocksound = PLATEHIT
 	armor = ARMOR_VAMP
@@ -254,7 +254,7 @@
 	armor = ARMOR_VAMP
 	smeltresult = /obj/item/ingot/purifiedaalloy
 	body_parts_inherent = FULL_BODY
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 
 /obj/item/clothing/wrists/roguetown/bracers/paalloy/vampire
 	name = "ancient ceremonial bracers"
@@ -262,7 +262,7 @@
 	icon_state = "ancientbracers"
 	smeltresult = /obj/item/ingot/purifiedaalloy
 	armor = ARMOR_VAMP
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 
 /obj/item/clothing/neck/roguetown/gorget/paalloy/vampire
 	name = "ancient ceremonial gorget"
@@ -270,7 +270,7 @@
 	icon_state = "ancientgorget"
 	smeltresult = /obj/item/ingot/purifiedaalloy
 	armor = ARMOR_VAMP
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 
 /obj/item/clothing/head/roguetown/helmet/heavy/vampire
 	name = "ancient ceremonial sayovard"

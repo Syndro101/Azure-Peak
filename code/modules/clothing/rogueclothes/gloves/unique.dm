@@ -8,7 +8,7 @@
 	armor = ARMOR_BLACKOAK //Resistant to blunt and stab, super weak to slash.
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	smeltresult = /obj/item/rogueore/coal
 	anvilrepair = /datum/skill/craft/carpentry
 
@@ -55,7 +55,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/gloves.dmi'
 	w_class = WEIGHT_CLASS_SMALL
 	armor = ARMOR_PADDED_BAD
-	max_integrity = ARMOR_INT_SIDE_LEATHER // 200 — small steel pieces, leather-tier durability
+	max_integrity = INT_TIER_MEDIUM(8) // 200 — small steel pieces, leather-tier durability
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	smeltresult = /obj/item/ingot/steel
 	unarmed_bonus = 8

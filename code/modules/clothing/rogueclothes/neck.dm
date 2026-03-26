@@ -119,7 +119,7 @@
 	armor = ARMOR_LEATHER
 	sewrepair = TRUE
 	sellprice = 10
-	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	salvage_result = /obj/item/natural/hide/cured
 	salvage_amount = 1
 
@@ -133,7 +133,7 @@
 	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	flags_inv = HIDEEARS|HIDEHAIR
 	armor = ARMOR_MAILLE
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	body_parts_covered = NECK|HAIR|EARS|HEAD
@@ -162,7 +162,7 @@
 	name = "decrepit coif"
 	desc = "Frayed bronze rings, linked together to form a billowing hood. Shrapnel peppers the linkage; arrowheads and speartips, brought along from a battlefield who's history - and legionnaires - have been lost to tyme."
 	icon_state = "achaincoif"
-	max_integrity = ARMOR_INT_SIDE_DECREPIT
+	max_integrity = INT_TIER_MEDIUM(10) - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_CHAINMAIL
@@ -189,7 +189,7 @@
 	icon_state = "ichaincoif"
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 
 /obj/item/clothing/neck/roguetown/chaincoif/full
 	name = "full chain coif"
@@ -244,7 +244,7 @@
 	smeltresult = /obj/item/ingot/steel
 	equip_sound = 'sound/foley/equip/equip_armor.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK|MOUTH|NOSE
@@ -262,7 +262,7 @@
 	desc = "An iron neckguard, traditionally mounted to the collar of a cuirass. It restricts the head's motion, but ensures the absence of abuseable gaps."
 	icon_state = "ibevor"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/neck/roguetown/gorget
@@ -274,7 +274,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	equip_sound = 'sound/foley/equip/equip_armor.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	resistance_flags = FIRE_PROOF
 	body_parts_inherent = NECK
 	slot_flags = ITEM_SLOT_NECK
@@ -291,13 +291,13 @@
 	icon_state = "bronzegorget"
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/bronze
-	max_integrity = ARMOR_INT_SIDE_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 
 /obj/item/clothing/neck/roguetown/gorget/aalloy
 	name = "decrepit gorget"
 	desc = "Frayed bronze plates, shingled together to shroud the neck. Primitive scrapes line the flanks, yet the center seems to've been cored out by a spear's thrust."
 	icon_state = "ancientgorget"
-	max_integrity = ARMOR_INT_SIDE_DECREPIT
+	max_integrity = INT_TIER_MEDIUM(10) - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_PLATE
@@ -317,7 +317,7 @@
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/steel
 	anvilrepair = /datum/skill/craft/armorsmithing
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	body_parts_inherent = NECK
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
@@ -369,7 +369,7 @@
 	name = "steel gorget"
 	desc = "A series of steel plates designed to protect the neck, traditionally worn atop a jacket or cuirass. It bares a mammon-sized divet along its right flank; the certification of its 'proofedness' against a longbow's strike."
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	icon_state = "sgorget"
 
 /obj/item/clothing/neck/roguetown/gorget/gold
@@ -378,7 +378,7 @@
 	icon_state = "goldgorget"
 	armor_class = ARMOR_CLASS_HEAVY //Ceremonial. Heavy is the head that bares the burden.
 	armor = ARMOR_INDESTRUCTIBLE //Renders its wearer completely invulnerable to damage. The caveat is, however..
-	max_integrity = ARMOR_INT_SIDE_GOLD // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
+	max_integrity = INT_TIER_LOW(1) // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
 	anvilrepair = null
 	smeltresult = /obj/item/ingot/gold
 	smelt_bar_num = 1
@@ -389,7 +389,7 @@
 
 /obj/item/clothing/neck/roguetown/gorget/gold/king
 	name = "royal golden gorget"
-	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
+	max_integrity = INT_TIER_LOW(2) // Doubled integrity.
 	sellprice = 300
 	unenchantable = TRUE
 
@@ -402,7 +402,7 @@
 	name = "ancient gorget"
 	desc = "Polished gilbranze plates, layered atop one-another to guard the neck. The spine; a sacred leyline between spirit and sinew. It must remain unsevered, lest Her blessings be lost."
 	icon_state = "ancientgorget"
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	smeltresult = /obj/item/ingot/aaslag
 
 /obj/item/clothing/neck/roguetown/gorget/prisoner/Initialize()
@@ -424,7 +424,7 @@
 	armor = ARMOR_CLOTHING
 	smeltresult = /obj/item/ingot/iron
 	anvilrepair = /datum/skill/craft/armorsmithing
-	max_integrity = ARMOR_INT_SIDE_DECREPIT
+	max_integrity = INT_TIER_MEDIUM(6)
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK

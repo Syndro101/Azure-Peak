@@ -641,7 +641,7 @@
 	AddComponent(/datum/component/dream_weapon, null, 20 SECONDS)
 
 /obj/item/clothing/under/roguetown/platelegs/dreamwalker
-	max_integrity = ARMOR_INT_LEG_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	name = "otherworldly legplate"
 	desc = "Strange iridescent leg plate. It reflects light as if covered in shiny oil."
 	icon_state = "dreamlegs"
@@ -653,7 +653,7 @@
 	AddComponent(/datum/component/dream_weapon, null, 20 SECONDS)
 
 /obj/item/clothing/shoes/roguetown/boots/armor/dreamwalker
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	name = "otherworldly boots"
 	desc = "Strange iridescent plated boots. It reflects light as if covered in shiny oil."
 	icon_state = "dreamboots"
@@ -668,7 +668,7 @@
 	name = "otherworldly gauntlets"
 	desc = "Strange iridescent plated gauntlets. It reflects light as if covered in shiny oil."
 	icon_state = "dreamgauntlets"
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	item_flags = DREAM_ITEM
 
 /obj/item/clothing/gloves/roguetown/plate/dreamwalker/Initialize()

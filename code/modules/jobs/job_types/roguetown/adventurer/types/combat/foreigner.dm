@@ -877,7 +877,7 @@
 	icon_state = "bbevor"
 	smeltresult = /obj/item/ingot/bronze
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_SIDE_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/suit/roguetown/armor/plate/bronze/light

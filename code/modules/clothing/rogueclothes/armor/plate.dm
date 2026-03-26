@@ -566,7 +566,7 @@
 	icon_state = "goldcuirass"
 	desc = "A resplendant cuirass of pure gold, fitted with tassets for additional coverage. It is dressed atop a besilked arming jacket to ensure the absolute comfort of its wearer, and the holy sigil has been meticulously formed from its slanted plates."
 	armor = ARMOR_INDESTRUCTIBLE //Renders its wearer completely invulnerable to damage. The caveat is, however..
-	max_integrity = ARMOR_INT_SIDE_GOLD // ..is that it's extraordinarily fragile, especially against blunt damage.
+	max_integrity = INT_TIER_LOW(1) // ..is that it's extraordinarily fragile, especially against blunt damage.
 	armor_class = ARMOR_CLASS_HEAVY
 	anvilrepair = null
 	smeltresult = /obj/item/ingot/gold
@@ -584,7 +584,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted/gold/king
 	name = "golden heroic cuirass"
-	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
+	max_integrity = INT_TIER_LOW(2) // Doubled integrity.
 	sellprice = 400
 	unenchantable = TRUE
 

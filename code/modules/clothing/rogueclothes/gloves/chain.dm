@@ -5,7 +5,7 @@
 	armor = ARMOR_MAILLE
 	resistance_flags = FIRE_PROOF
 	blocksound = CHAINHIT
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
@@ -23,7 +23,7 @@
 	name = "decrepit chain gauntlets"
 	desc = "Frayed bronze rings, interlinked together to form sagging mittens. Fingers, talons, claws; they're all the same, when smothered beneath maille and left to rot away."
 	icon_state = "acgloves"
-	max_integrity = ARMOR_INT_SIDE_DECREPIT
+	max_integrity = INT_TIER_MEDIUM(10) - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_CHAINMAIL
@@ -71,4 +71,4 @@
 	desc = "Armored mittens, woven together from a series of interlinked iron rings. Crude gestures are impossible with such gloves; then again, who needs an offending finger when one can articulate their hatred through a swing to the skull?"
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)

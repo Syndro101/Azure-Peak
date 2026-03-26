@@ -7,7 +7,7 @@
 	sewrepair = FALSE
 	armor = ARMOR_MAILLE
 	blocksound = CHAINHIT
-	max_integrity = ARMOR_INT_LEG_STEEL_CHAIN
+	max_integrity = INT_TIER_HIGH(3)
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
@@ -29,7 +29,7 @@
 	desc = "Splint mail and brigandine chausses, designed to protect the legs while still providing almost complete free range of movement."
 	icon_state = "splintlegs"
 	item_state = "splintlegs"
-	max_integrity = ARMOR_INT_LEG_BRIGANDINE
+	max_integrity = INT_TIER_MEDIUM(10)
 	armor = ARMOR_PLATE
 	blocksound = SOFTHIT
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
@@ -56,7 +56,7 @@
 	desc = "A pair of leather pants backed with iron splints, offering superior protection while remaining lightweight."
 	icon_state = "ironsplintlegs"
 	item_state = "ironsplintlegs"
-	max_integrity = ARMOR_INT_LEG_IRON_CHAIN
+	max_integrity = INT_TIER_MEDIUM(9)
 	armor = ARMOR_PLATE
 	blocksound = SOFTHIT
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -79,7 +79,7 @@
 	armor = ARMOR_MAILLE
 	body_parts_covered = GROIN
 	blocksound = CHAINHIT
-	max_integrity = ARMOR_INT_LEG_STEEL_CHAIN
+	max_integrity = INT_TIER_HIGH(3)
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
@@ -94,7 +94,7 @@
 	name = "iron chain chausses"
 	icon_state = "ichain_legs"
 	desc = "A set of armored leggings, composed from interlinked iron rings."
-	max_integrity = ARMOR_INT_LEG_IRON_CHAIN
+	max_integrity = INT_TIER_MEDIUM(9)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
@@ -120,7 +120,7 @@
 	desc = "Frayed bronze rings, linked together with bindings of rotting leather to form a waist's drape. The maille jingles with every step, singing the hymn to a cadence once savored by marching legionnaires."
 	icon_state = "achainkilt"
 	sleevetype = "achainkilt"
-	max_integrity = ARMOR_INT_LEG_DECREPIT_CHAIN
+	max_integrity = INT_TIER_MEDIUM(10) - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_CHAINMAIL

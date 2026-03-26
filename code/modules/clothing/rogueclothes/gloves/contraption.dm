@@ -48,7 +48,7 @@
 	armor = ARMOR_MAILLE
 	resistance_flags = FIRE_PROOF
 	blocksound = CHAINHIT
-	max_integrity = ARMOR_INT_SIDE_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'

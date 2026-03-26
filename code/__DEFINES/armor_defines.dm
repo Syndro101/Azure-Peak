@@ -1,6 +1,9 @@
-/*------------------------\
-| ARMOR PENETRATION DEFINES |
-\------------------------*/
+/*==============================\
+||							   ||
+||  ARMOR PENETRATION DEFINES  ||
+||							   ||
+\==============================*/
+
 // Penetration tier system
 // Weapon penfactor (on intents) vs armor blocking tier (on clothing).
 // If penfactor > armor tier: 100% of damage penetrates armor.
@@ -16,12 +19,14 @@
 #define PEN_HEAVY			3	// Spear, estoc. Penetrates mail/brigandine/plate at same-tier 20%.
 #define PEN_BLACKSTEEL		4	// Halfsword, dagger pick. Penetrates plate fully, blacksteel at 20%.
 
+
 // Damage Blocking tiers (0-4). Armor clothing.
 #define DBLOCK_NONE			0	// No blocking. Unarmored skin.
 #define DBLOCK_LIGHT		1	// Cloth, bad leather, NPC trash armor.
 #define DBLOCK_MEDIUM		2	// Gambeson, padded, hardened leather, studded — player light armor.
 #define DBLOCK_HEAVY		3	// Brigandine, mail, cuirass, plate.
 #define DBLOCK_BLACKSTEEL	4	// Blacksteel, antagonist.
+
 
 // Damage reduction tiers (0-5). Used by blunt (absorb), fire, acid (pierce).
 // Note that blunt by default have 1.6x Integrity Multiplier.
@@ -34,6 +39,7 @@
 #define DR_SUPER			4	// Medium Light Armor. 80% EHP increase. EDPS: 89%
 #define DR_ULTRA			5	// Best quality light armor. 100% EHP increase. EDPS: 80%
 
+
 // Armor damage type categories
 // DR Absorb: damage reduced by tier, ALL damage goes to armor integrity (none to HP). Blunt.
 // DR Pierce: damage reduced by tier, reduced damage STILL hits HP. Armor also takes integrity damage. Fire, acid.
@@ -43,50 +49,17 @@
 #define ARMOR_DR_TYPES list("blunt", "fire", "acid")
 #define ARMOR_DBLOCK_TYPES list("slash", "stab", "piercing")
 
+
 // Penetration passthrough fractions
 #define PEN_PASSTHROUGH_OVER	1.0		// pen > armor tier: full damage through
 #define PEN_PASSTHROUGH_SAME	0.2		// pen == armor tier: 20% damage through
 // pen < armor tier: fully blocked (0 through)
 // 0.2 is calculated from 55 AP + 30 damage spear = 5 damage through on 80 plate (stab), 5 / 30 = 0.166, rounded up to 0.2. This somewhat matches old system behavior.
 
+
 // Damage percentage where the type breaks.
 #define INTEG_FAILURE 0.1 // 10%
 
-/*------------------------\
-| ARMOR INTEGRITY DEFINES | // Use these when possible on armor to keep value consistent.
-\------------------------*/
-// Side = Non-chest armor integrity
-// For now. Steel vs Iron will be a difference of 75% integrity without rating differences.
-// So Iron will actually be pretty decent and there shouldn't be a compulsive need to upgrade.
-
-// Chest / Armor Pieces
-
-// LEG PIECES - Leg Armor
-#define ARMOR_INT_LEG_ANTAG 600
-#define ARMOR_INT_LEG_BLACKSTEEL 500
-#define ARMOR_INT_LEG_STEEL_PLATE 400
-#define ARMOR_INT_LEG_IRON_PLATE 300
-#define ARMOR_INT_LEG_DECREPIT_PLATE 200
-#define ARMOR_INT_LEG_STEEL_CHAIN 300
-#define ARMOR_INT_LEG_BRIGANDINE 250 // Iron grade but whatever.
-#define ARMOR_INT_LEG_IRON_CHAIN 225
-#define ARMOR_INT_LEG_DECREPIT_CHAIN 150
-#define ARMOR_INT_LEG_HARDLEATHER 250
-#define ARMOR_INT_LEG_LEATHER 200
-#define ARMOR_INT_LEG_CLOTH 100
-
-// SIDE PIECES - Non-Chest armor
-#define ARMOR_INT_SIDE_ANTAG 500 // Integrity for antag pieces
-#define ARMOR_INT_SIDE_BLACKSTEEL 400 // Integrity for blacksteel pieces
-#define ARMOR_INT_SIDE_BRONZE 350 // Integrity for bronze pieces
-#define ARMOR_INT_SIDE_STEEL 300 // Integrity for steel pieces
-#define ARMOR_INT_SIDE_IRON 225 // Integrity for iron pieces
-#define ARMOR_INT_SIDE_HARDLEATHER 250 // Integrity for hardened leather pieces
-#define ARMOR_INT_SIDE_LEATHER 200 // Integrity for leather / copper pieces
-#define ARMOR_INT_SIDE_DECREPIT 150 // Integrity for decrepit pieces
-#define ARMOR_INT_SIDE_CLOTH 100 // Integrity for cloth / aesthetic oriented pieces
-#define ARMOR_INT_SIDE_GOLDPLUS 10 // Integrity for royal variants of golden / cermemonial pieces
-#define ARMOR_INT_SIDE_GOLD 5 // Integrity for golden / ceremonial pieces
 
 /*===========================================\
 ||									  		||
@@ -95,8 +68,11 @@
 ||								  			||
 \===========================================*/
 
+// For now. Steel vs Iron will be a difference of 75% integrity without rating differences.
+// So Iron will actually be pretty decent and there shouldn't be a compulsive need to upgrade.
+
 /*====================================================================================================
-||					|| 	HELMET			||	 CHEST			||	 ARMS			||	 LEGS			||
+||					|| 	    HELMET		||	    CHEST		||	     ARMS		||	     LEGS		||
 ======================================================================================================
 || GOLD				||	 5/10			||	 5/10			||	 5/10			||	  5/10			||
 || CLOTH			||	 100/200/300	||	 100/200/300	||	 100/200/300	||	  100/200/300	||
@@ -109,6 +85,7 @@
 || ANTAG-GEAR		||	 600			||	 700			||	 500			||	  600			||
 ======================================================================================================
 (Values after slashes are for light, medium, and heavy variants of the same material, if present.)  */
+
 
 /* 
 Integrity modification defines, use these when the object has one of the features below.
@@ -193,9 +170,9 @@ INT_TIER_ULTRA(3) = 1500
 ||							 ||
 \============================*/
 
-/*-------\
-MISC ARMOR
-\-------*/
+/*-----------\
+| MISC ARMOR |
+\-----------*/
 
 // These are here just in case and are inherited by their relevant subtypes.
 #define ARMOR_MACHINERY list("blunt" = DR_LIGHT, "slash" = DBLOCK_LIGHT, "stab" = DBLOCK_LIGHT, "piercing" = DBLOCK_LIGHT, "fire" = DR_MEDIUM, "acid" = DR_HEAVY)
@@ -204,9 +181,9 @@ MISC ARMOR
 #define ARMOR_CLOSET list("blunt" = DR_LIGHT, "slash" = DBLOCK_LIGHT, "stab" = DBLOCK_LIGHT, "piercing" = DBLOCK_LIGHT, "fire" = DR_HEAVY, "acid" = DR_HEAVY)
 #define ARMOR_BLACKBAG list("blunt" = DR_ULTRA, "slash" = DBLOCK_BLACKSTEEL, "stab" = DBLOCK_BLACKSTEEL, "piercing" = DBLOCK_BLACKSTEEL, "fire" = DR_SUPER, "acid" = DR_ULTRA)
 
-/*--------\
-LIGHT ARMOR
-\--------*/
+/*------------\
+| LIGHT ARMOR |
+\------------*/
 
 // CLOTHING: Clothing, no real protection.
 #define ARMOR_CLOTHING list("blunt" = DR_NONE, "slash" = DBLOCK_NONE, "stab" = DBLOCK_NONE, "piercing" = DBLOCK_NONE, "fire" = DR_NONE, "acid" = DR_NONE)
@@ -229,16 +206,16 @@ LIGHT ARMOR
 // BRIGANDINE: Better blunt padding than plate, but arrows punch through.
 #define ARMOR_BRIGANDINE list("blunt" = DR_MEDIUM, "slash" = DBLOCK_HEAVY, "stab" = DBLOCK_HEAVY, "piercing" = DBLOCK_MEDIUM, "fire" = DR_NONE, "acid" = DR_NONE)
 
-/*---------\
-MEDIUM ARMOR
-\---------*/
+/*-------------\
+| MEDIUM ARMOR |
+\-------------*/
 
 // MAILLE: Plate level protection but weak vs Bodkin (100% through)
 #define ARMOR_MAILLE list("blunt" = DR_LIGHT, "slash" = DBLOCK_HEAVY, "stab" = DBLOCK_HEAVY, "piercing" = DBLOCK_MEDIUM, "fire" = DR_NONE, "acid" = DR_NONE)
 
-/*--------\
-HEAVY ARMOR
-\--------*/
+/*------------\
+| HEAVY ARMOR |
+\------------*/
 
 // PLATE: Spear (PEN_HEAVY) gets 20% through stab. Bodkin goes through 20% - HEAVY rating. Weak vs Blunt. 
 // Brigandine, cuirass, plate. All plate-tier items; differentiated by integrity, not rating. 
@@ -248,9 +225,9 @@ HEAVY ARMOR
 // Halfsword (PEN_BLACKSTEEL) gets 20% through. Blunt still works decently (DR_MEDIUM only).
 #define ARMOR_PLATE_BSTEEL list("blunt" = DR_MEDIUM, "slash" = DBLOCK_BLACKSTEEL, "stab" = DBLOCK_BLACKSTEEL, "piercing" = DBLOCK_BLACKSTEEL, "fire" = DR_MEDIUM, "acid" = DR_MEDIUM)
 
-/*----------\
-SPECIAL ARMOR
-\----------*/
+/*--------------\
+| SPECIAL ARMOR |
+\--------------*/
 
 // Avoid adding to this unless ABSOLUTELY necessary to reduce armor bloat and keep armor reasonable and intuitive.
 #define ARMOR_REGENERATING_BROKEN list("blunt" = DR_LIGHT, "slash" = DBLOCK_LIGHT, "stab" = DBLOCK_LIGHT, "piercing" = DBLOCK_LIGHT, "fire" = DR_NONE, "acid" = DR_NONE)

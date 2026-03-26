@@ -19,7 +19,7 @@
 	name = "leather trousers"
 	armor = ARMOR_LEATHER
 	icon_state = "leathertrou"
-	max_integrity = ARMOR_INT_LEG_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	resistance_flags = FIRE_PROOF
 	salvage_result = /obj/item/natural/hide/cured
 

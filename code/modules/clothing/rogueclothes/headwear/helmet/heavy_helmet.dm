@@ -270,7 +270,7 @@
 	desc = "A resplendant barbute, masterfully forged from pure gold. Its nasalguard is marked by a holy sigil, and its interior is fitted with a besilked arming cap. Even in absolute darkness, the polished surface sparkles with imbued sunlight."
 	icon_state = "goldbarbute"
 	armor = ARMOR_INDESTRUCTIBLE //Renders its wearer completely invulnerable to damage. The caveat is, however..
-	max_integrity = ARMOR_INT_SIDE_GOLD // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
+	max_integrity = INT_TIER_LOW(1) // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
 	armor_class = ARMOR_CLASS_HEAVY //Ceremonial. Heavy is the head that bares the burden.
 	anvilrepair = null
 	smeltresult = /obj/item/ingot/gold
@@ -284,7 +284,7 @@
 	name = "royal golden helmet"
 	desc = "A resplendant barbute, masterfully forged from pure gold. Its nasalguard is marked by a holy sigil, and its interior is fitted with a besilked arming cap. The dorpeled crown atop its brow invokes authority, be it misbegotten or endowed."
 	icon_state = "goldbarbute_crown"
-	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
+	max_integrity = INT_TIER_LOW(2) // Doubled integrity.
 	sellprice = 300
 	unenchantable = TRUE
 
@@ -449,7 +449,7 @@
 	desc = "A resplendant armet, masterfully forged from pure gold. Hexagrammic etchings of a holy sigil line its visor, and its interior is fitted with a besilked arming cap. Even in absolute darkness, the polished surface sparkles with imbued sunlight."
 	icon_state = "goldknight"
 	armor = ARMOR_INDESTRUCTIBLE //Renders its wearer completely invulnerable to damage. The caveat is, however..
-	max_integrity = ARMOR_INT_SIDE_GOLD // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
+	max_integrity = INT_TIER_LOW(1) // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
 	armor_class = ARMOR_CLASS_HEAVY //Ceremonial. Heavy is the head that bares the burden.
 	anvilrepair = null
 	smeltresult = /obj/item/ingot/gold
@@ -489,7 +489,7 @@
 	name = "royal golden armet"
 	desc = "A resplendant armet, masterfully forged from pure gold. Hexagrammic etchings of a holy sigil line its visor, and its interior is fitted with a besilked arming cap. The dorpeled crown atop its brow invokes authority, be it misbegotten or endowed."
 	icon_state = "goldknight_crown"
-	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
+	max_integrity = INT_TIER_LOW(2) // Doubled integrity.
 	sellprice = 300
 	unenchantable = TRUE
 

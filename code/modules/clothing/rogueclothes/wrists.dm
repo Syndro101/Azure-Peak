@@ -34,7 +34,7 @@
 	armor = ARMOR_PLATE
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	pickup_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -58,7 +58,7 @@
 	body_parts_covered = ARMS | HANDS //Experimental, but should compliment the cost. Let all handhitters fear your presence.. for exactly five strikes.
 	armor_class = ARMOR_CLASS_HEAVY //Ceremonial. Heavy is the head that bares the burden.
 	armor = ARMOR_INDESTRUCTIBLE //Renders its wearer completely invulnerable to damage. The caveat is, however..
-	max_integrity = ARMOR_INT_SIDE_GOLD // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
+	max_integrity = INT_TIER_LOW(1) // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
 	anvilrepair = null
 	smeltresult = /obj/item/ingot/gold
 	smelt_bar_num = 1
@@ -69,7 +69,7 @@
 
 /obj/item/clothing/wrists/roguetown/bracers/gold/king
 	name = "royal golden bracers"
-	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
+	max_integrity = INT_TIER_LOW(2) // Doubled integrity.
 	sellprice = 300
 	unenchantable = TRUE
 
@@ -88,7 +88,7 @@
 	armor = ARMOR_PLATE_BSTEEL
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
-	max_integrity = ARMOR_INT_SIDE_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(4)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	sewrepair = FALSE
 	alternate_worn_layer = WRISTS_LAYER
@@ -118,7 +118,7 @@
 /obj/item/clothing/wrists/roguetown/bracers/aalloy
 	name = "decrepit bracers"
 	desc = "Frayed bronze cuffings, bound across the wrists. Don't bother counting the tallies left behind by their former legionnaires; none of them ever returned from the battlefields."
-	max_integrity = ARMOR_INT_SIDE_DECREPIT
+	max_integrity = INT_TIER_MEDIUM(10) - INT_DECREPIT_MALUS
 	icon_state = "ancientbracers"
 	color = "#bb9696"
 	chunkcolor = "#532e25"
@@ -139,7 +139,7 @@
 	body_parts_covered = ARMS | HANDS //Experimental, but should play well with the increased durability.
 	smeltresult = /obj/item/ingot/bronze
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_SIDE_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 
 /obj/item/clothing/wrists/roguetown/bracers/leather
 	name = "leather bracers"
@@ -147,7 +147,7 @@
 	icon_state = "lbracers"
 	item_state = "lbracers"
 	armor = ARMOR_PADDED
-	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
@@ -169,7 +169,7 @@
 	desc = "A pair of heavy leather wristguards, deliciously darkened for deterring dangers."
 	icon_state = "albracers"
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 10
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
@@ -216,7 +216,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	icon_state = "nocwrappings"
 	item_state = "nocwrappings"
-	max_integrity = ARMOR_INT_SIDE_STEEL //Heavy leather-tier protection and critical resistances, steel-tier integrity. Integrity boost encourages hand-to-hand parrying. Weaker than the Psydonic Thorns. Uncraftable.
+	max_integrity = INT_TIER_HIGH(3) //Heavy leather-tier protection and critical resistances, steel-tier integrity. Integrity boost encourages hand-to-hand parrying. Weaker than the Psydonic Thorns. Uncraftable.
 	blocksound = SOFTHIT
 	anvilrepair = null
 	sewrepair = TRUE
@@ -277,7 +277,7 @@
 	item_state = "splintarms"
 	armor = ARMOR_BRIGANDINE
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	w_class = WEIGHT_CLASS_NORMAL
@@ -296,7 +296,7 @@
 	item_state = "ironsplintarms"
 	armor = ARMOR_BRIGANDINE //not plate armor, is leather + iron bits
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_SIDE_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 	w_class = WEIGHT_CLASS_NORMAL
@@ -309,7 +309,7 @@
 	body_parts_covered = ARMS
 	icon_state = "ibracers"
 	item_state = "ibracers"
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/wrists/roguetown/bracers/jackchain
@@ -318,7 +318,7 @@
 	icon_state = "jackchain"
 	item_state = "jackchain"
 	armor = ARMOR_BRIGANDINE
-	max_integrity = ARMOR_INT_SIDE_LEATHER // Make it slightly worse
+	max_integrity = INT_TIER_MEDIUM(8) // Make it slightly worse
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'

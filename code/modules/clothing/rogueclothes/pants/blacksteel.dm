@@ -10,7 +10,7 @@
 	icon_state = "bklegs"
 	item_state = "bklegs"
 	armor = ARMOR_PLATE_BSTEEL
-	max_integrity = ARMOR_INT_LEG_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(5)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 2

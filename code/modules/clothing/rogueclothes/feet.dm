@@ -64,7 +64,7 @@
 	color = null
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	armor = ARMOR_PLATE
 	pickup_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
@@ -106,7 +106,7 @@
 	name = "aavnic riding boots"
 	desc = "A pair of sturdy riding boots with an iron heel and brass spurs."
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 
 /obj/item/clothing/shoes/roguetown/shortboots
 	name = "shortboots"
@@ -240,7 +240,7 @@
 	icon_state = "fencerboots"
 	item_state = "fencerboots"
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_SIDE_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	armor = ARMOR_LEATHER
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	salvage_amount = 1
@@ -266,7 +266,7 @@
 	name = "woad elven boots"
 	desc = "The living trunks still blossom in the spring. They let water through, but it is never cold."
 	armor = ARMOR_BLACKOAK //Resistant to blunt and stab, but very weak to slash.
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
 	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
@@ -289,7 +289,7 @@
 	color = null
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
-	max_integrity = ARMOR_INT_SIDE_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	armor = ARMOR_PLATE
 	pickup_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
@@ -309,7 +309,7 @@
 	body_parts_covered = FEET | LEGS
 	armor_class = ARMOR_CLASS_HEAVY //Ceremonial. Heavy is the head that bares the burden.
 	armor = ARMOR_INDESTRUCTIBLE //Renders its wearer completely invulnerable to damage. The caveat is, however..
-	max_integrity = ARMOR_INT_SIDE_GOLD // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
+	max_integrity = INT_TIER_LOW(1) // ..is that it's extraordinarily fragile. To note, this is lower than even Decrepit-tier armor.
 	anvilrepair = null
 	smeltresult = /obj/item/ingot/gold
 	smelt_bar_num = 1
@@ -320,7 +320,7 @@
 
 /obj/item/clothing/shoes/roguetown/boots/armor/gold/king
 	name = "royal golden greaves"
-	max_integrity = ARMOR_INT_SIDE_GOLDPLUS // Doubled integrity.
+	max_integrity = INT_TIER_LOW(2) // Doubled integrity.
 	sellprice = 300
 	unenchantable = TRUE
 
@@ -331,12 +331,12 @@
 	body_parts_covered = FEET | LEGS
 	smeltresult = /obj/item/ingot/bronze
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_SIDE_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 
 /obj/item/clothing/shoes/roguetown/boots/armor/graggar
 	name = "vicious boots"
 	desc = "Fluted sabatons, dusted with the bonedust of a thousand crushed skulls. Spit this final act, thine embodiment of sin - why would you ever want for something else, when you are God?"
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	armor = ARMOR_PLATE_BSTEEL
 	icon_state = "graggarplateboots"
 
@@ -346,7 +346,7 @@
 
 
 /obj/item/clothing/shoes/roguetown/boots/armor/matthios
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	name = "gilded boots"
 	desc = "Gilded tombs do worm enfold."
 	icon_state = "matthiosboots"
@@ -363,7 +363,7 @@
 	qdel(src)
 
 /obj/item/clothing/shoes/roguetown/boots/armor/zizo
-	max_integrity = ARMOR_INT_SIDE_ANTAG
+	max_integrity = INT_TIER_HIGH(5)
 	name = "avantyne boots"
 	desc = "Ensnaring paradoxes, rended beneath logic and solidified into tangible footguards. Called forth from the edge of what should be known, in Her name."
 	icon_state = "zizoboots"
@@ -389,7 +389,7 @@
 	item_state = "soldierboots"
 	color = null
 	blocksound = PLATEHIT
-	max_integrity = ARMOR_INT_SIDE_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	armor = ARMOR_PLATE
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
@@ -519,7 +519,7 @@
 	desc = "Antiquated sabatons, forged from segmented plates of blacksteel. Am I the cancer that is killing this world? Is it my hate, my spite, my lust - that, which poisons the ones around me, and siphons away the hope of Man and God alike? When the last hearth is quenched and Psydonia is nothing more than a shriveled husk, will I still blame the corpses for what I had done? </br>‎  </br>Let go of your hate. Your lyfe is yours, and yours alone to arbitrate."
 	icon_state = "bkboots"
 	item_state = "bkboots"
-	max_integrity = ARMOR_INT_SIDE_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(4)
 	armor = ARMOR_PLATE_BSTEEL
 	smeltresult = /obj/item/ingot/blacksteel
 	chunkcolor = "#303036"
@@ -557,7 +557,7 @@
 	icon_state = "iron_horseshoes"
 	item_state = "iron_horseshoes"
 	clothing_flags = TAUR_COMPATIBLE
-	max_integrity = ARMOR_INT_LEG_IRON_PLATE
+	max_integrity = INT_TIER_HIGH(3)
 	sewrepair = FALSE
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/iron
@@ -582,7 +582,7 @@
 	desc = "A pair of robust steel horseshoes nailed onto thick leather soles. These are ready to be attached to some hooves."
 	icon_state = "steel_horseshoes"
 	item_state = "steel_horseshoes"
-	max_integrity = ARMOR_INT_LEG_STEEL_CHAIN
+	max_integrity = INT_TIER_HIGH(3)
 	sewrepair = FALSE
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/steel
@@ -592,7 +592,7 @@
 	desc = "A pair of shining silver horseshoes nailed onto thick leather soles. These are ready to be attached to some hooves."
 	icon_state = "silver_horseshoes"
 	item_state = "silver_horseshoes"
-	max_integrity = ARMOR_INT_LEG_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	sewrepair = FALSE
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/silver
@@ -602,7 +602,7 @@
 	desc = "A pair of opulent golden horseshoes nailed onto thick leather soles. These are ready to be attached to some hooves."
 	icon_state = "gold_horseshoes"
 	item_state = "gold_horseshoes"
-	max_integrity = ARMOR_INT_LEG_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	sewrepair = FALSE
 	armor = ARMOR_PLATE // these are awful!
 	smeltresult = /obj/item/ingot/gold

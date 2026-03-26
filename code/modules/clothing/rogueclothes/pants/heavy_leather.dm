@@ -9,7 +9,7 @@
 	armor = ARMOR_LEATHER
 	sellprice = 18
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_LEG_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
@@ -105,21 +105,21 @@
 	desc = "Foreign pants, with leather insewns."
 	icon_state = "eastpants1"
 	allowed_race = NON_DWARVEN_RACE_TYPES
-	max_integrity = ARMOR_INT_LEG_HARDLEATHER - 50
+	max_integrity = INT_TIER_MEDIUM(8)
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 	name = "strange ripped pants"
 	desc = "Weird pants typically worn by the destitute in Kazengun. Or, those looking to make a fashion statement."
 	icon_state = "eastpants2"
 	allowed_race = NON_DWARVEN_RACE_TYPES
-	max_integrity = ARMOR_INT_LEG_HARDLEATHER - 50
+	max_integrity = INT_TIER_MEDIUM(8)
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/kazengun //no, not 'eastpants3', silly!
 	name = "gambeson trousers"
 	desc = "A form of Kazengunite peasant's trousers. The fabric used in their manufacture is strong, and could probably turn away a few blows."
 	icon_state = "baggypants"
 	item_state = "baggypants"
-	max_integrity = ARMOR_INT_LEG_HARDLEATHER - 50
+	max_integrity = INT_TIER_MEDIUM(8)
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/shadowpants
 	name = "silk tights"

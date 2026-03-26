@@ -32,7 +32,7 @@
 	icon_state = "gronnleatherpants"
 	item_state = "gronnleatherpants"
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_LEG_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	
