@@ -307,8 +307,8 @@
 	max_blade_int = 666
 
 /obj/item/rogueweapon/sword/long/exe/berserk/gnoll/Initialize()
-  ..()
-  add_filter(FORCE_FILTER, 2, list("type" = "outline", "color" = GLOW_COLOR_VAMPIRIC, "alpha" = 188, "size" = 1))
+	..()
+	add_filter(FORCE_FILTER, 2, list("type" = "outline", "color" = GLOW_COLOR_VAMPIRIC, "alpha" = 188, "size" = 1))
 
 //
 

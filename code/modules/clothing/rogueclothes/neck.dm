@@ -244,7 +244,7 @@
 	smeltresult = /obj/item/ingot/steel
 	equip_sound = 'sound/foley/equip/equip_armor.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = INT_TIER_HIGH(3)
+	max_integrity = INT_TIER_HIGH(3) - INT_ADJUSTABLE_MALUS
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK|MOUTH|NOSE
@@ -262,7 +262,7 @@
 	desc = "An iron neckguard, traditionally mounted to the collar of a cuirass. It restricts the head's motion, but ensures the absence of abuseable gaps."
 	icon_state = "ibevor"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = INT_TIER_MEDIUM(9)
+	max_integrity = INT_TIER_MEDIUM(9) - INT_ADJUSTABLE_MALUS
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/neck/roguetown/gorget
