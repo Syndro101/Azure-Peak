@@ -490,7 +490,7 @@
 	icon_state = "halfplatekini"
 	item_state = "halfplatekini"
 	armor = ARMOR_PLATE // Identical to steel cuirass, but covering the groin instead of the vitals.
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL	// Identical to steel cuirasss. Same steel price.
+	max_integrity = INT_TIER_HIGH(3)	// Identical to steel cuirasss. Same steel price.
 	allowed_sex = list(MALE, FEMALE)
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
@@ -506,7 +506,7 @@
 	allowed_race = CLOTHED_RACES_TYPES
 	nodismemsleeves = TRUE
 	blocking_behavior = null
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
@@ -540,7 +540,7 @@
 	name = "decrepit cuirass"
 	desc = "Frayed bronze, pounded into a breastplate. It feels more like a corset than a cuirass; there's barely enough width to let those aching lungs breathe."
 	icon_state = "ancientcuirass"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_DECREPIT
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_PLATE
@@ -559,7 +559,7 @@
 	desc = "An ornate steel cuirass, fitted with tassets for additional coverage. The intricate fluting not only attracts the maidens, but also strengthens the steel's resistance against repeated impacts."
 
 	body_parts_covered = CHEST | VITALS | LEGS 
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 
 /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted/gold
 	name = "golden cuirass"
@@ -605,7 +605,7 @@
 	desc = "An iron cuirass. While most would sneer at the idea of wearing 'lesser alloys', many-a-levyman can attest to its robustness."
 	icon_state = "ibreastplate"
 	boobed = FALSE	//the armor just looks better with this, makes sense and is 8 sprites less
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
+	max_integrity = INT_TIER_HIGH(2) + INT_TEMPERED_BONUS
 	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 2
 
@@ -613,7 +613,7 @@
 	name = "heart protector"
 	desc = "Shingled copper disks, strapped together to ward the heart from harm. As discovered by its antiquital wearers, it is deceptively protective; yet, its straps can only sustain so much stress before snapping.."
 	icon_state = "copperchest"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_DECREPIT
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS - INT_DECREPIT_MALUS
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/copper
 	body_parts_covered = CHEST
@@ -648,7 +648,7 @@
 	body_parts_covered = COVERAGE_ALL_BUT_ARMFEET
 	allowed_sex = list(MALE, FEMALE)
 	icon_state = "lamellar"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3) - INT_COVERAGE_MALUS
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 4 SECONDS
@@ -701,7 +701,7 @@
 	name = "steel heavy lamellar"
 	desc = "A chestpiece of Aavnic make composed of easily-replaced small rectangular plates of layered steel laced together in rows with wire. Malleable and protective, perfect for cavalrymen."
 	icon_state = "hudesutu"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL + 50
+	max_integrity = INT_TIER_HIGH(3) + INT_REINFORCED_BONUS
 
 /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
 	slot_flags = ITEM_SLOT_ARMOR

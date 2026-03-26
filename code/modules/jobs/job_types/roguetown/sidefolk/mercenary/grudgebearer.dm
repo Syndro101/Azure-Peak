@@ -145,7 +145,7 @@
 	armor = ARMOR_PLATE
 	armor_class = ARMOR_CLASS_MEDIUM
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	smelt_bar_num = 3
 
 /obj/item/clothing/head/roguetown/helmet/heavy/dwarven

@@ -73,7 +73,7 @@
 	barding_state = "barding_chain"
 	female_barding_state = "barding_chain-f"
 	armor = ARMOR_MAILLE
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -102,7 +102,7 @@
 	barding_state = "barding_chain"
 	female_barding_state = "barding_chain"
 	armor = ARMOR_MAILLE
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing

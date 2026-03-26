@@ -6,7 +6,7 @@
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
 	icon_state = "haubergeon"
 	armor = ARMOR_MAILLE
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	blocksound = CHAINHIT
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
@@ -24,7 +24,7 @@
 	icon_state = "ihaubergeon"
 	name = "iron haubergeon"
 	desc = "A maille shirt fashioned from hundreds of interlinked iron rings. The humble combination of a haubergeon and gambeson is favored amongst Psydonia's levymen, alongside a sharpened spear and a cooled pint of ale."
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
+	max_integrity = INT_TIER_HIGH(2) + INT_TEMPERED_BONUS
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/Initialize(mapload)
@@ -35,7 +35,7 @@
 	name = "decrepit haubergeon"
 	desc = "Frayed bronze rings and rotting leather, woven together to form a short maille-atekon. There's a breach along the rings, where the leather is wet with blackness: the aftermath of a mortal wound, delivered centuries ago."
 	icon_state = "ancientchain"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_DECREPIT
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_CHAINMAIL
@@ -82,13 +82,13 @@
 	icon_state = "ihauberk"
 	item_state = "ihauberk"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
+	max_integrity = INT_TIER_HIGH(2) + INT_TEMPERED_BONUS
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/aalloy
 	name = "decrepit hauberk"
 	desc = "Frayed bronze rings and rotting leather, woven together to form a sleeved maille-atekon. Once, the armored vestments of a paladin: now, the withered veil of Zizo's undying legionnaires."
 	icon_state = "ancienthauberk"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_DECREPIT
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_CHAINMAIL

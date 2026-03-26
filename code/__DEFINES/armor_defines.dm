@@ -61,13 +61,6 @@
 
 // Chest / Armor Pieces
 
-// MEDIUM
-#define ARMOR_INT_CHEST_MEDIUM_BRONZE 350 //More integrity, less protection. // converted
-#define ARMOR_INT_CHEST_MEDIUM_STEEL 300
-#define ARMOR_INT_CHEST_MEDIUM_IRON 225
-#define ARMOR_INT_CHEST_MEDIUM_SCALE 200 // More coverage, less integrity
-#define ARMOR_INT_CHEST_MEDIUM_DECREPIT 150
-
 // LIGHT
 #define ARMOR_INT_CHEST_LIGHT_MASTER 300 // High tier cloth / leather armor
 #define ARMOR_INT_CHEST_LIGHT_MEDIUM 250 // Medium tier cloth / leather armor
@@ -131,13 +124,14 @@ Do NOT use these on objects with integrity lower than or equal to 10/25/50/100 r
 */
 
 // Reduction
-#define INT_BRITTLE_MALUS 25		// For some armors, like iron.
+#define INT_BRITTLE_MALUS 25		// For some gear cases, like iron.
 #define INT_COVERAGE_MALUS 50		// Covers more of the body without a real downside, think Scalemail and Mailled Hauberks.
 #define INT_ADJUSTABLE_MALUS 50 	// Simulates weakpoints from hinges or whatever.
-#define INT_DECREPIT_MALUS 100 	// Old-ass rusty gear.
-#define INT_PSYDONIC_MALUS 100	// Free training, less int.
+#define INT_DECREPIT_MALUS 100 		// Old-ass rusty gear.
+#define INT_PSYDONIC_MALUS 100		// Free training, less int.
 
 // Addition
+#define INT_TEMPERED_BONUS 25		// Worse version of Reinforced.
 #define INT_BRONZE_BONUS 50			// Bonus integrity for worse protection.
 #define INT_REINFORCED_BONUS 50		// Bonus integrity for some armor.
 
