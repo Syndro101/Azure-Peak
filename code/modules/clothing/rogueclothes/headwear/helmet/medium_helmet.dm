@@ -17,7 +17,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	blocksound = PLATEHIT
-	max_integrity = ARMOR_INT_HELMET_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	grid_height = 64
 	grid_width = 64
 	experimental_onhip = TRUE
@@ -57,7 +57,7 @@
 	desc = "An iron helmet which covers the top of the head."
 	icon_state = "skullcap"
 	body_parts_covered = HEAD|HAIR
-	max_integrity = ARMOR_INT_HELMET_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 	smeltresult = /obj/item/ingot/iron
 
 // Copper lamellar cap
@@ -67,7 +67,7 @@
 	icon_state = "lamellar"
 	smeltresult = /obj/item/ingot/copper
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_HELMET_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 
 /obj/item/clothing/head/roguetown/helmet/horned
 	name = "horned cap"
@@ -75,7 +75,7 @@
 	icon_state = "hornedcap"
 	body_parts_covered = HEAD|HAIR
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_HELMET_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 
 /obj/item/clothing/head/roguetown/helmet/winged
 	name = "winged cap"
@@ -116,7 +116,7 @@
 	desc = "An iron helmet which protects the top and sides of the head. From a distance, it can almost be mistaken for a waterlogged straw hat; one must only wonder if such garments of peasantry inspired its design, in the first place."
 	icon_state = "ikettle"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_HELMET_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 
 /obj/item/clothing/head/roguetown/helmet/kettle/wide
 	name = "wide kettle helmet"
@@ -186,14 +186,14 @@
 	icon_state = "isallet"
 	desc = "A iron helmet covers most of the head, offeirng superior coverage to the kettle helmet. It comfortably fits atop most padded coifs-and-caps."
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_HELMET_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 
 /obj/item/clothing/head/roguetown/helmet/sallet/beastskull
 	name = "beast skull"
 	desc = "The skull of a horned beast, carved and fashioned into a helmet. An steel skull cap has been inserted on the inside."
 	icon_state = "marauder_head"
 	body_parts_covered = HEAD|EARS|HAIR
-	max_integrity = ARMOR_INT_HELMET_STEEL + 50
+	max_integrity = INT_TIER_HIGH(3) + INT_REINFORCED_BONUS
 	smeltresult = /obj/item/ingot/steel
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	worn_x_dimension = 64
@@ -217,7 +217,7 @@
 	name = "steel shishak"
 	desc = "A flat decorated steel helmet of Aavnic make with a spike at the top end. A hanging layer of chainmail protects the sides of the head and even the neck."
 	body_parts_covered = HEAD|EARS|HAIR|NECK
-	max_integrity = ARMOR_INT_HELMET_STEEL + 50
+	max_integrity = INT_TIER_HIGH(3) + INT_REINFORCED_BONUS
 	icon_state = "shishak"
 
 /obj/item/clothing/head/roguetown/helmet/sallet/visored/ComponentInitialize()
@@ -253,7 +253,7 @@
 	icon_state = "isallet_visor"
 	desc = "An iron 'sallet'-styled helmet with an adjustable visor. Out for a stroll, now, are we?"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_HELMET_IRON
+	max_integrity = INT_TIER_MEDIUM(9)
 
 /obj/item/clothing/head/roguetown/helmet/sallet/raneshen
 	name = "kulah khud"
@@ -270,7 +270,7 @@
 	desc = "The skull of a horned beast, carved and fashioned into a helmet. An steel skull cap has been inserted on the inside."
 	icon_state = "marauder_head"
 	body_parts_covered = HEAD|EARS|HAIR
-	max_integrity = ARMOR_INT_HELMET_STEEL + 50
+	max_integrity = INT_TIER_HIGH(3) + INT_REINFORCED_BONUS
 	smeltresult = /obj/item/ingot/steel
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	worn_x_dimension = 64

@@ -62,7 +62,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = ARMOR_PLATE_BSTEEL
 	block2add = FOV_BEHIND
-	max_integrity = ARMOR_INT_HELMET_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(5)
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 2
 	chunkcolor = "#303036"
@@ -84,7 +84,7 @@
 	smeltresult = /obj/item/ingot/blacksteel
 	armor = ARMOR_PLATE_BSTEEL
 	block2add = FOV_BEHIND
-	max_integrity = ARMOR_INT_HELMET_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(5)
 	smelt_bar_num = 2
 
 /obj/item/clothing/head/roguetown/helmet/heavy/bucket/crusader/blacksteel/get_mechanics_examine(mob/user)

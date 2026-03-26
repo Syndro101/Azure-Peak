@@ -735,7 +735,7 @@
 	the reenactment of Ravox's duel against Graggar atop Ur-Syon's ruins - mythologized not as a tentacled star, but as a towering doppelganger-champion; \
 	sculpted by the Archdevil to be the inverse to all who stood for justice and chivalry."
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_HELMET_HEAVY_BRONZE - 100
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS - INT_ADJUSTABLE_MALUS
 	armor_class = ARMOR_CLASS_LIGHT
 	material_category = ARMOR_MAT_PLATE
 	body_parts_covered = FULL_HEAD
@@ -886,7 +886,7 @@
 	icon_state = "bronzeprotector"
 	item_state = "bronzeprotector"
 	body_parts_covered = CHEST
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_BRONZE - 100 //Translates into 250 INT, or a little above Iron - and +100 INT over the Copper variant.
+	max_integrity = INT_TIER_HIGH(2) + INT_BRONZE_BONUS //Translates into 250 INT, or a little above Iron - and +100 INT over the Copper variant.
 	armor_class = ARMOR_CLASS_LIGHT
 	armor = ARMOR_PLATE // Same as Copper Heart Protector. Strictly locked to chest zone.
 
@@ -898,7 +898,7 @@
 	icon_state = "bronzeplate"
 	item_state = "bronzeplate"
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_CHEST_PLATE_BRONZE + 150 //Translates into 700 INT. Bronze armor is penetrated by any attack that deals a combined FORCE/AP value of +50, which translates into virtually any non-STR modified attack in the game; swords, daggers, axes.
+	max_integrity = INT_TIER_HIGH(7) + INT_BRONZE_BONUS //Translates into 750 INT. Bronze armor is penetrated by any attack that deals a combined FORCE/AP value of +50, which translates into virtually any non-STR modified attack in the game; swords, daggers, axes.
 	armor_class = ARMOR_CLASS_HEAVY
 	smeltresult = /obj/item/ingot/bronze
 	smelt_bar_num = 3
@@ -931,7 +931,7 @@
 	icon_state = "bronzeplatealt"
 	item_state = "bronzeplatealt"
 	body_parts_covered = CHEST | VITALS | LEGS
-	max_integrity = ARMOR_INT_CHEST_PLATE_BRONZE + 75 //Iron Halfplate analogue. Still heavy as hell.
+	max_integrity = INT_TIER_HIGH(6) + INT_BRONZE_BONUS //Iron Halfplate analogue. Still heavy as hell.
 
 /obj/item/clothing/mask/rogue/facemask/bronze
 	name = "bronze mask"
@@ -981,7 +981,7 @@
 	sparked scholarly debates for the better part of a millennium; is it a star, a vortex, or the Sun? </br>A notch behind the sigil \
 	allows for the joint mounting of a plume. Nock a feather into it to show off your alliegence's colors."
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_HELMET_HEAVY_BRONZE - 25 //Close, but no cigar.
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 	material_category = ARMOR_MAT_PLATE
 	body_parts_covered = HEAD|HAIR|EARS
 	icon_state = "bronzehelmet"

@@ -8,7 +8,7 @@
 	item_state = "halfplate"
 	armor = ARMOR_PLATE
 	nodismemsleeves = TRUE
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 	allowed_sex = list(MALE, FEMALE)
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	pickup_sound = 'sound/foley/equip/equip_armor_plate.ogg'
@@ -61,7 +61,7 @@
 	icon_state = "ihalfplate"
 	item_state = "ihalfplate"
 	boobed = FALSE	//the armor just looks better with this, makes sense and is 8 sprites less
-	max_integrity = ARMOR_INT_CHEST_PLATE_IRON
+	max_integrity = INT_TIER_HIGH(4) - INT_BRITTLE_MALUS
 	armor_class = ARMOR_CLASS_MEDIUM
 	smeltresult = /obj/item/ingot/iron
 
@@ -72,7 +72,7 @@
 	icon_state = "bronzecuirass"
 	armor = ARMOR_PLATE
 	smeltresult = /obj/item/ingot/bronze
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
 	armor_class = ARMOR_CLASS_MEDIUM
 	boobed = FALSE
 	smelt_bar_num = 2
@@ -82,7 +82,7 @@
 	desc = "Frayed bronze layers, wrought into plate armor. Once, the hauberk of a rising champion; now, nothing more than a fool's tomb."
 	icon_state = "ancientplate"
 	item_state = "ancientplate"
-	max_integrity = ARMOR_INT_CHEST_PLATE_DECREPIT
+	max_integrity = INT_TIER_HIGH(3) + INT_REINFORCED_BONUS - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_PLATE
@@ -222,7 +222,7 @@
 	equip_delay_self = 6 SECONDS
 	unequip_delay_self = 6 SECONDS
 
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET // Less durability than proper plate, more expensive to manufacture, and accurate to the sprite.
 	armor_class = ARMOR_CLASS_HEAVY
 
@@ -230,7 +230,7 @@
 	name = "vicious half-plate"
 	desc = "A fluted vessel of Graggar's hatred, stirring with the same violence that drives our world. Such an inner motive leaves the steel unchained from flesh - enslaved, no more!"
 	armor_class = ARMOR_CLASS_MEDIUM
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL // We are probably one of the best medium armor sets. At higher integ than most(heavy armor levels, pretty much. But worse resistances, we get the bonus over the other sets of being medium and being unequippable.)
+	max_integrity = INT_TIER_HIGH(5) // We are probably one of the best medium armor sets. At higher integ than most(heavy armor levels, pretty much. But worse resistances, we get the bonus over the other sets of being medium and being unequippable.)
 	icon_state = "graggarplate"
 	armor = ARMOR_PLATE
 
@@ -245,7 +245,7 @@
 	smeltresult = /obj/item/ingot/silverblessed
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET // Less durability than proper plate, more expensive to manufacture, and accurate to the sprite.
 
-	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
+	max_integrity = INT_TIER_HIGH(5) - INT_PSYDONIC_MALUS
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/ornate/ComponentInitialize()
 	AddComponent(/datum/component/armour_filtering/positive, TRAIT_PSYDONIAN_GRIT, "ornate_plate")
@@ -273,7 +273,7 @@
 	icon_state = "ironplate"
 	desc = "A 'munition'-grade set of iron plate armor, fitted with pauldrons and tassets for additional coverage. Most of these sets, produced within the last century, can trace their origins to an edict from Hammerhold's former King: one which demanded a munitions run, but forgot to specify its tailoring towards the dwarven physique. </br>‎  </br>'Slow to don-and-doff, without a trusted Levyman's aid..'"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_CHEST_PLATE_IRON
+	max_integrity = INT_TIER_HIGH(4) - INT_BRITTLE_MALUS
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/samsibsa
 	name = "samsibsa scaleplate"
@@ -285,7 +285,7 @@
 	color = null
 	detail_color = CLOTHING_WHITE
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL - 50 //slightly worse
+	max_integrity = INT_TIER_HIGH(5) - INT_COVERAGE_MALUS //slightly worse
 	var/picked = FALSE
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/samsibsa/attack_right(mob/user)
@@ -320,7 +320,7 @@
 	desc = "A suit of ornate plate armor, noble in both presentation and protection. Such resplendent maille is traditionally reserved for the higher echelons of nobility; seasoned knights, venerated kings, and pot-bellied councilmen that wish to flaunt their opulence towards the unwashed masses."
 	icon_state = "ornateplate"
 
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/fluted/ornate
 	name = "psydonic plate"
@@ -328,7 +328,7 @@
 	icon_state = "ornateplate"
 	smeltresult = /obj/item/ingot/silverblessed
 
-	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
+	max_integrity = INT_TIER_HIGH(5) - INT_PSYDONIC_MALUS
 
 	/// Whether the user has the Heavy Armour Trait prior to donning.
 	var/traited = FALSE
@@ -362,7 +362,7 @@
 	name = "gilded fullplate"
 	desc = "Often, you have heard that told,"
 	icon_state = "matthiosarmor"
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/matthios/Initialize()
 	. = ..()
@@ -378,7 +378,7 @@
 	name = "avantyne fullplate"
 	desc = "Impossible angularities, molded into a form more comprehensible to the layman's eyes. It has been called forth from the edge of what should be known, in Her name."
 	icon_state = "zizoplate"
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 	chunkcolor = "#363030"
 	material_category = ARMOR_MAT_PLATE
 
@@ -416,7 +416,7 @@
 	allowed_sex = list(MALE, FEMALE)
 	nodismemsleeves = TRUE
 	blocking_behavior = null
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
@@ -633,7 +633,7 @@
 	icon_state = "silverhalfplate"
 	item_state = "silverhalfplate"
 	armor = ARMOR_PLATE
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 	allowed_sex = list(MALE, FEMALE)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
@@ -662,7 +662,7 @@
 	blocksound = PLATEHIT
 	smelt_bar_num = 2
 	armor_class = ARMOR_CLASS_HEAVY
-	max_integrity = ARMOR_INT_CHEST_PLATE_BRIGANDINE + 50
+	max_integrity = INT_TIER_HIGH(3)
 
 /obj/item/clothing/suit/roguetown/armor/plate/scale/marshal
 	name = "coat of the commander"

@@ -133,7 +133,7 @@
 	item_state = "dwarfchest"
 	armor = ARMOR_PLATE
 	body_parts_covered = COVERAGE_ALL_BUT_HANDFEET
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 	smelt_bar_num = 4
 
 // Smith: Maille-tier protection, medium armor class
@@ -162,7 +162,7 @@
 	stack_fovs = TRUE
 	bloody_icon = 'icons/effects/blood64.dmi'
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4)
 	experimental_inhand = FALSE
 	experimental_onhip = FALSE
 

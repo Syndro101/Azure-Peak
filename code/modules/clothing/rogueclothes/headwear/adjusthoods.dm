@@ -251,7 +251,7 @@
 /obj/item/clothing/head/roguetown/roguehood/unholy
 	name = "foreboding hood"
 	desc = "A veil to the cultic and capricious. The runic sigils stitched along the hems teem with unimaginable knowledge, in the most literal sense of the word."
-	max_integrity = ARMOR_INT_HELMET_CLOTH
+	max_integrity = INT_TIER_MEDIUM(4)
 	armor = ARMOR_PADDED
 	color = null
 	item_state = "warlockhood"
@@ -260,12 +260,12 @@
 /obj/item/clothing/head/roguetown/roguehood/unholy/lich
 	name = "ominous hood"
 	desc = "An otherworldly veil, whispering the constant ponderances of a runic enigma. She watches over you; and Her grin is crooked into one of eternal malice."
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 
 /obj/item/clothing/head/roguetown/roguehood/unholy/enchanted
 	name = "ominously enchanted hood"
 	desc = "An otherworldly veil, amythortz-woven and crackling with the unignorable truths of a runic enigma. She watches over you; and Her grin is crooked into one of eternal malice."
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	armor = ARMOR_LEATHER
 	item_state = "ewarlockhood"
 	icon_state = "ewarlockhood"

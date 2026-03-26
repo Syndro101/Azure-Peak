@@ -77,7 +77,7 @@
 	smeltresult = null
 	sewrepair = TRUE
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_HELMET_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	salvage_result = /obj/item/natural/hide/cured
 	var/on = FALSE
 	var/lux_consumed = FALSE
@@ -255,7 +255,7 @@
 	item_state = "gronnplate"
 	boobed = FALSE
 	body_parts_covered = COVERAGE_ALL_BUT_HANDLEGS
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
+	max_integrity = INT_TIER_HIGH(5)
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/gloves/roguetown/plate/iron/gronn

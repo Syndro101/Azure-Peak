@@ -28,7 +28,7 @@
 /obj/item/clothing/suit/roguetown/shirt/robe/unholy/lich
 	name = "ominous robes"
 	desc = "An otherworldly veil, whispering a hundred paradoxical answers to the ultimate question. Her hand guides your grandest missive; to bring forth progress, no matter the cost."
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 
 /obj/item/clothing/suit/roguetown/shirt/robe/unholy/enchanted
 	name = "ominously enchanted robes"

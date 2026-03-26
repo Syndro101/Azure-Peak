@@ -116,7 +116,7 @@
 	name = "arbalist's skin"
 	desc = "Taut lyke the bow I draw."
 	armor = ARMOR_PADDED_BAD
-	max_integrity = ARMOR_INT_CHEST_CIVILIAN
+	max_integrity = ARMOR_INT_CHEST_CLOTH
 	repair_items = list(
 		/obj/item/needle = 'sound/foley/sewflesh.ogg',
 		/obj/item/needle/thorn = 'sound/foley/sewflesh.ogg',

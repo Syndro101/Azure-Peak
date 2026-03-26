@@ -9,7 +9,7 @@
 	armor = ARMOR_PLATE
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4)
 	armor_class = ARMOR_CLASS_MEDIUM	//Heavy helmets require at least medium armor training. Stops no-armor training plate-headgear users.
 	smelt_bar_num = 1
 	stack_fovs = TRUE
@@ -29,7 +29,7 @@
 	armor = ARMOR_PLATE
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/bronze
-	max_integrity = ARMOR_INT_HELMET_HEAVY_BRONZE
+	max_integrity = INT_TIER_HIGH(4) + INT_BRONZE_BONUS
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 1
 	stack_fovs = TRUE
@@ -60,7 +60,7 @@
 	name = "decrepit barbute"
 	desc = "Frayed bronze plates, pounded into a visored helmet. Scrapes and dents line the curved plating, weathered from centuries of neglect. The remains of a plume's stub hang atop its rim."
 	body_parts_covered = COVERAGE_HEAD
-	max_integrity = ARMOR_INT_HELMET_HEAVY_DECREPIT
+	max_integrity = INT_TIER_HIGH(3) - INT_DECREPIT_MALUS
 	icon_state = "ancientbarbute"
 	color = "#bb9696"
 	chunkcolor = "#532e25"
@@ -100,7 +100,7 @@
 	an inherited design, borne from the earliest daes of Psydonia. Mounted on the back is a unique couplet, fit for adopting feathered greatplumes."
 	icon_state = "barbute"
 	item_state = "barbute"
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4)
 	block2add = null
 	worn_x_dimension = 64
 	worn_y_dimension = 64
@@ -151,7 +151,7 @@
 	won't be long until they're almost here. Will you cry all your tears, or will you face your fears? </br>Mounted on the back is a unique couplet, fit for adopting feathered greatplumes."
 	icon_state = "barbute_visor"
 	item_state = "barbute_visor"
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4) - INT_ADJUSTABLE_MALUS
 	adjustable = CAN_CADJUST
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
@@ -165,7 +165,7 @@
 	desc = "A steel greathelm of inordinate thickness, whose design seems to've been inspired by both a tournament's froggemund and a kingdom's sugarloaf. It is far from elegant, but it will \
 	thwart killing blows again-and-again without compromise. Never forget that a champion of Psydonia needn't nobility nor wealth to become eternal; they need only the courage to be free. \
 	</br>'In their legends, there were no gods - only heroes.'"
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL + 50
+	max_integrity = INT_TIER_HIGH(4) + INT_REINFORCED_BONUS
 	icon_state = "barbutedunk"
 	item_state = "barbutedunk"
 	emote_environment = 3
@@ -229,7 +229,7 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/guard/aalloy
 	name = "decrepit savoyard"
 	desc = "Frayed bronze plates, molded into a ventilated casket. It reeks of fetid shit, and each breath - labored and strained - is laced with flaked metal."
-	max_integrity = ARMOR_INT_HELMET_HEAVY_DECREPIT
+	max_integrity = INT_TIER_HIGH(3) - INT_DECREPIT_MALUS
 	icon_state = "ancientsavoyard"
 	color = "#bb9696"
 	chunkcolor = "#532e25"
@@ -297,7 +297,7 @@
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	block2add = FOV_BEHIND
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL - ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY
+	max_integrity = INT_TIER_HIGH(4) - INT_ADJUSTABLE_MALUS
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -334,7 +334,7 @@
 	desc = "A chipped greathelm of frayed bronze. The fittings squeal with nauseous annoyance, whenever you move to lift its half-rusted visor up and down. Add a feather to show the colors of your family or allegiance."
 	icon_state = "ancientknight"
 	item_state = "ancientknight"
-	max_integrity = ARMOR_INT_HELMET_HEAVY_DECREPIT
+	max_integrity = INT_TIER_HIGH(3) - INT_DECREPIT_MALUS
 	smeltresult = /obj/item/ingot/aaslag
 	color = "#bb9696"
 	chunkcolor = "#532e25"
@@ -430,7 +430,7 @@
 	icon_state = "iknight"
 	desc = "A noble knight's greathelm made of iron; a popular choice in the preceding centuries, before many knew the answer to the riddle of steel.  Add a feather to show the colors of your family or allegiance."
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_HELMET_HEAVY_IRON
+	max_integrity = INT_TIER_HIGH(3) - INT_ADJUSTABLE_MALUS
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/old
 	name = "knight's helmet"
@@ -442,7 +442,7 @@
 	desc = "A knight's greathelm, forged from iron in the antiquated 'Rockhillic' style. Add a feather to show the colors of your family or allegiance. </br>‎  </br>'Despite everything, it's still you.'"
 	icon_state = "iknightclassic"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = ARMOR_INT_HELMET_HEAVY_IRON
+	max_integrity = INT_TIER_HIGH(3) - INT_ADJUSTABLE_MALUS
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/gold
 	name = "golden knight's armet"
@@ -498,7 +498,7 @@
 	desc = "A reinforced Eisenhut that's been extended downwards to cover the face, fully protecting the wearer but limiting his field of view. Pairs well with a bevor."
 	icon_state = "skettle"
 	item_state = "skettle"
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4)
 	adjustable = CANT_CADJUST
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle/attackby(obj/item/W, mob/living/user, params)
@@ -731,7 +731,7 @@
 	item_state = "psydonarmet"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	adjustable = CAN_CADJUST
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL - ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY
+	max_integrity = INT_TIER_HIGH(4) - INT_ADJUSTABLE_MALUS
 	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm/getonmobprop(tag)
@@ -796,7 +796,7 @@
 	bloody_icon = 'icons/effects/blood64.dmi'
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	adjustable = CAN_CADJUST
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL - ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY
+	max_integrity = INT_TIER_HIGH(4) - INT_ADJUSTABLE_MALUS
 	var/plumed = FALSE
 
 /obj/item/clothing/head/roguetown/helmet/heavy/ordinatorhelm/ComponentInitialize()
@@ -835,7 +835,7 @@
 	emote_environment = 3
 	body_parts_covered = FULL_HEAD|NECK
 	block2add = FOV_BEHIND //Unlike the Froggemund, this variant has an improved FOV radius - from ~60-90 to 180 degrees.
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL + ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY
+	max_integrity = INT_TIER_HIGH(4)
 	armor_class = ARMOR_CLASS_LIGHT //Exclusive to the Absolver, ensures they can use it without having to deal with the potential headache of giving them maille training. Spare versions require very expensive reagents and skills.
 	worn_x_dimension = 64
 	worn_y_dimension = 64
@@ -868,7 +868,7 @@
 	item_state = "psybucket"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	adjustable = CAN_CADJUST
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4)
 	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/head/roguetown/helmet/heavy/psybucket/attackby(obj/item/W, mob/living/user, params)
@@ -922,7 +922,7 @@
 	item_state = "psysallet"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	adjustable = CAN_CADJUST
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL
+	max_integrity = INT_TIER_HIGH(4)
 	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
@@ -1005,7 +1005,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL - ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY
+	max_integrity = INT_TIER_HIGH(4) - INT_ADJUSTABLE_MALUS
 	armor_class = null	//Needs no armor class, snowflake merc gear.
 
 /obj/item/clothing/head/roguetown/helmet/heavy/volfplate/ComponentInitialize()
@@ -1051,7 +1051,7 @@
 	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
 	smeltresult = /obj/item/rogueore/coal
 	anvilrepair = /datum/skill/craft/carpentry
-	max_integrity = ARMOR_INT_HELMET_HEAVY_IRON // Weaker than usual because it is good vs blunt and stab
+	max_integrity = INT_TIER_HIGH(3) // Weaker than usual because it is good vs blunt and stab
 	blocksound = SOFTHIT
 	experimental_inhand = FALSE
 	experimental_onhip = FALSE
@@ -1065,7 +1065,7 @@
 	body_parts_covered = FULL_HEAD|NECK
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL + ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY // Worst vision. Yes.
+	max_integrity = INT_TIER_HIGH(4) + INT_REINFORCED_BONUS // Worst vision. Yes.
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -1165,7 +1165,7 @@
 	desc = "All that glitters is not gold,"
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT|HIDEHAIR|HIDEFACIALHAIR
 	icon_state = "matthioshelm"
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 	bloody_icon = 'icons/effects/blood64.dmi'
@@ -1180,7 +1180,7 @@
 	name = "vicious helmet"
 	desc = "Snarled teeth gnash the unholy bascinet's visor, drenched in scarlet. Your beluxed invocation; the dinnerbell for a feast of blood and steel."
 	icon_state = "graggarplatehelm"
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT|HIDEHAIR|HIDEFACIALHAIR
 	var/active_item = FALSE
 
@@ -1212,7 +1212,7 @@
 	desc = "Crystallized inzanity, brought to a lower plane of existence and flared into an ethereal greathelm. It has been called forth from the edge of reality, in Her name."
 	adjustable = CAN_CADJUST
 	icon_state = "zizobarbute"
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	chunkcolor = "#363030"
 	material_category = ARMOR_MAT_PLATE
 	var/frogstyle = FALSE
@@ -1250,7 +1250,7 @@
 	icon_state = "ironplate"
 	item_state = "ironplate"
 	emote_environment = 3
-	max_integrity = ARMOR_INT_HELMET_HEAVY_IRON
+	max_integrity = INT_TIER_HIGH(3)
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/iron
@@ -1264,7 +1264,7 @@
 	icon_state = "capbarbute"
 	adjustable = CAN_CADJUST
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDESNOUT
-	max_integrity = ARMOR_INT_HELMET_HEAVY_STEEL - ARMOR_INT_HELMET_HEAVY_ADJUSTABLE_PENALTY
+	max_integrity = INT_TIER_HIGH(4) - INT_ADJUSTABLE_MALUS
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 

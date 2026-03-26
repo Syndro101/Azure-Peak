@@ -184,7 +184,7 @@
 	body_parts_inherent = FULL_BODY
 	armor_class = ARMOR_CLASS_HEAVY
 	armor = ARMOR_VAMP
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	smeltresult = /obj/item/ingot/purifiedaalloy
 
@@ -199,7 +199,7 @@
 	item_state = "vplate"
 	armor = ARMOR_VAMP
 	nodismemsleeves = TRUE
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 	allowed_sex = list(MALE, FEMALE)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/purifiedaalloy
@@ -212,7 +212,7 @@
 	desc = "An ornate aketon, woven from crimson silk and worn beneath a layer of enchanted gilbranze maille. Vheslyn, Zizo, Kaine had all failed in their pursuits - yet, the ancient truths they left behind were more valuable than lyfe itself. It's time to show them all how a Lord truly gets it done."
 	armor_class = ARMOR_CLASS_HEAVY
 	armor = ARMOR_VAMP
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	smeltresult = /obj/item/ingot/purifiedaalloy
 
@@ -276,7 +276,7 @@
 	name = "ancient ceremonial sayovard"
 	desc = "A grand bascinet of enchanted gilbranze. They erased you from history, they destroyed your kingdom, and they plucked at its remains like vultures-to-carrion. Yet now, they cower in fear of your second coming; for they know that even the Pantheon cannot stop what is coming. </br>Send word - the end is nigh."
 	icon_state = "vhelmet"
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	body_parts_inherent = FULL_BODY
 	block2add = FOV_BEHIND
 	stack_fovs = FALSE

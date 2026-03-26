@@ -15,7 +15,7 @@
 	equip_delay_self = 6 SECONDS
 	unequip_delay_self = 6 SECONDS
 	armor = ARMOR_PLATE_BSTEEL
-	max_integrity = ARMOR_INT_CHEST_PLATE_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(6)
 	chunkcolor = "#303036"
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 3
@@ -33,7 +33,7 @@
 	icon_state = "bkhalfarmor"
 	item_state = "bkhalfarmor"
 	armor = ARMOR_PLATE_BSTEEL
-	max_integrity = ARMOR_INT_CHEST_PLATE_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(6)
 	smeltresult = /obj/item/ingot/blacksteel
 	chunkcolor = "#303036"
 
@@ -43,7 +43,7 @@
 	icon_state = "bcuirass"
 	item_state = "bcuirass"
 	armor = ARMOR_PLATE_BSTEEL
-	max_integrity = ARMOR_INT_CHEST_PLATE_BLACKSTEEL
+	max_integrity = INT_TIER_HIGH(6)
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 2
 	chunkcolor = "#303036"

@@ -68,7 +68,7 @@
 	sewrepair = TRUE
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	sleevetype = "shirt"
-	max_integrity = ARMOR_INT_CHEST_CIVILIAN
+	max_integrity = ARMOR_INT_CHEST_CLOTH
 	sellprice = 50
 	armor_class = ARMOR_CLASS_LIGHT
 	allowed_sex = list(MALE, FEMALE)

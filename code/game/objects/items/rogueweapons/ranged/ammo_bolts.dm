@@ -171,7 +171,7 @@
 	name = "heavy bolt"
 	damage = 90 // +20 damage over the regular bolt
 	damage_type = BRUTE
-	armor_penetration = PEN_BSTEEL
+	armor_penetration = PEN_BLACKSTEEL
 	object_damage_multiplier = 14 //Determines the multiplier that's applied to the bolt's damage value, when striking a structure. By default, it can destroy any wooden defense - a door, barricade, wall - in one shot.
 	wall_impact_break_probability = 100 //Determines the chance that a bolt will destroy itself, when striking a structure. By default, it will always destroy itself after successfully impacting a wall.
 	damages_turf_walls = TRUE //Determines whether the bolt can damage turfs or not. By default, yes.
@@ -289,7 +289,7 @@
 /obj/projectile/bullet/reusable/bolt/silver
 	name = "silver bolt"
 	damage = 80 //One shot. Make it count. Pray your aim is true - and that whoever's on the other side isn't packing a shield or knows how to sidestep.
-	armor_penetration = PEN_BSTEEL
+	armor_penetration = PEN_BLACKSTEEL
 	icon_state = "silvbolt_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/bolt/silver
 	embedchance = 100
@@ -309,7 +309,7 @@
 /obj/projectile/bullet/reusable/heavy_bolt/silver
 	name = "heavy silver bolt"
 	damage = 110
-	armor_penetration = PEN_BSTEEL 
+	armor_penetration = PEN_BLACKSTEEL 
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/heavy_bolt/silver
 	icon_state = "silvheavybolt_proj"
 	hitsound = 'sound/combat/hits/hi_bolt (3).ogg'

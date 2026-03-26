@@ -97,7 +97,7 @@
 /obj/item/clothing/head/roguetown/grenzelhofthat/triumph
 	name = "grenzelhoft tellerbarret"
 	desc = "The latest in sixteenth-century fashionwear, stitched by the finest tailors in Grenzelhoft. </br>I can fit this onto a sallet, Etruscan bascinet, or Blacksteel armet for added protection."
-	max_integrity = ARMOR_INT_HELMET_CLOTH
+	max_integrity = INT_TIER_MEDIUM(4)
 	icon_state = "grenzelhat"
 	item_state = "grenzelhat"
 	icon = 'icons/roguetown/clothing/head.dmi'

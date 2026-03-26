@@ -880,7 +880,7 @@
 	misscost = 1
 	swingdelay = 15
 	clickcd = 15
-	penfactor = PEN_BSTEEL
+	penfactor = PEN_BLACKSTEEL
 	damfactor = 0.9
 	item_d_type = "stab"
 

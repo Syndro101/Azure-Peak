@@ -143,7 +143,7 @@
 	icon_state = "cuirasshauberk"
 	item_state = "cuirasshauberk"
 	armor_class = ARMOR_CLASS_HEAVY // Prevents slot-stoackage by those who aren't already specialzed in wearing plate armor.
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEELLIGHT // To note, this is about 450 INT, or +150 over regular hauberk and -50 under regular plate.
+	max_integrity = INT_TIER_HIGH(5) - INT_COVERAGE_MALUS // To note, this is about 450 INT, or +150 over regular hauberk and -50 under regular plate.
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron/heavy
 	name = "iron mailled hauberk"
@@ -152,21 +152,21 @@
 	icon_state = "icuirasshauberk"
 	item_state = "icuirasshauberk"
 	armor_class = ARMOR_CLASS_HEAVY
-	max_integrity = ARMOR_INT_CHEST_PLATE_IRONLIGHT // Roughly 325 INT. +150 over regular hauberk, and -50 under regular plate.
+	max_integrity = INT_TIER_HIGH(4) - INT_COVERAGE_MALUS - INT_BRITTLE_MALUS // Roughly 325 INT. +150 over regular hauberk, and -50 under regular plate.
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/aalloy/heavy
 	name = "decrepit hauberk"
 	desc = "Frayed bronze rings and rotting leather, woven together to form a sleeved maille-atekon; one that's been uncomfortably tucked beneath a matching cuirass. Such are the last remains of those who've dared to march against the undying legions, be it yils or centuries prior."
 	icon_state = "ancientcuirasshauberk"
 	item_state = "ancientcuirasshauberk"
-	max_integrity = ARMOR_INT_CHEST_PLATE_DECREPITLIGHT // 200 INT.
+	max_integrity = INT_TIER_HIGH(3) - INT_DECREPIT_MALUS // 200 INT.
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/paalloy/heavy
 	name = "ancient hauberk"
 	desc = "Polished gilbranze rings and silk, woven together to form a sleeved maille-atekon; one that's been uncomfortably tucked beneath a matching cuirass. It eminates an unfamiliar sensation, rarely seen amongst rot-and-undeath - elegance. In the worlds to come, do you suppose Her death knights would bare such a mantle?"
 	icon_state = "ancientcuirasshauberk"
 	item_state = "ancientcuirasshauberk"
-	max_integrity = ARMOR_INT_CHEST_PLATE_STEELLIGHT
+	max_integrity = INT_TIER_HIGH(5) - INT_COVERAGE_MALUS
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate
 	slot_flags = ITEM_SLOT_ARMOR
@@ -176,7 +176,7 @@
 	desc = "A beautiful steel cuirass, decorated with blessed silver fluting and worn atop thick chainmaille. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows of inhumen claws and axes. </br>‎  </br>'..the knowledge of evil, and the burden of carrying Psydonia's hope upon thine shoulders..'"
 	icon_state = "ornatehauberk"
 	item_state = "ornatehauberk"
-	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
+	max_integrity = INT_TIER_HIGH(5) - INT_PSYDONIC_MALUS
 	smeltresult = /obj/item/ingot/silverblessed
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate/get_mechanics_examine(mob/user)

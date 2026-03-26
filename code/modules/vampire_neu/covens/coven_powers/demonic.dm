@@ -176,7 +176,7 @@
 	max_integrity = 900
 	force = 11
 	wdefense = 9
-	armor_penetration = PEN_BSTEEL
+	armor_penetration = PEN_BLACKSTEEL
 	block_chance = 20
 	associated_skill = /datum/skill/magic/blood
 	wlength = WLENGTH_NORMAL

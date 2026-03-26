@@ -9,7 +9,7 @@
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HEAD //Meant to be worn under helmets pmuch
 	armor = ARMOR_PADDED_BAD
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_HELMET_CLOTH
+	max_integrity = INT_TIER_MEDIUM(4)
 	color = "#463C2B"
 	sewrepair = TRUE
 	salvage_result = /obj/item/natural/fibers
@@ -25,7 +25,7 @@
 	icon_state = "paddedarmingcap"
 	item_state = "paddedarmingcap"
 	armor = ARMOR_PADDED
-	max_integrity = ARMOR_INT_HELMET_CLOTH + 60
+	max_integrity = INT_TIER_MEDIUM(4) + INT_REINFORCED_BONUS
 
 /obj/item/clothing/head/roguetown/helmet/leather
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
@@ -39,7 +39,7 @@
 	smeltresult = null
 	sewrepair = TRUE
 	blocksound = SOFTHIT
-	max_integrity = ARMOR_INT_HELMET_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	salvage_result = /obj/item/natural/hide/cured
 
 /obj/item/clothing/head/roguetown/helmet/leather/chapeau
@@ -116,7 +116,7 @@
 	name = "hardened leather helmet"
 	desc = "Sturdy, durable, flexible. A comfortable and reliable hood made of hardened leather."
 	icon_state = "leatherhelm"
-	max_integrity = ARMOR_INT_HELMET_HARDLEATHER
+	max_integrity = INT_TIER_MEDIUM(10)
 	sellprice = 15
 	body_parts_covered = HEAD|EARS|HAIR|NOSE
 	armor = ARMOR_LEATHER
@@ -152,7 +152,7 @@
 	detail_tag = "_detail"
 	altdetail_tag = "_detailalt"
 	dynamic_hair_suffix = ""
-	max_integrity = ARMOR_INT_HELMET_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	body_parts_covered = HEAD|HAIR|EARS
 	armor = ARMOR_LEATHER // spellsinger hat stats
 	sewrepair = TRUE
@@ -215,7 +215,7 @@
 	icon_state = "easthat"
 	item_state = "easthat"
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_HELMET_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	blocksound = SOFTHIT
 	sewrepair = TRUE
 	flags_inv = HIDEEARS

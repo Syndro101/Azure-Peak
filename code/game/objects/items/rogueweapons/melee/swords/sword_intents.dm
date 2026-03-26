@@ -135,7 +135,7 @@
 	desc = "Grip the dull portion of your longsword with either hand and use it as leverage to deliver precise, powerful strikes that can dig into gaps in plate and push past maille."
 	attack_verb = list("goes into a half-sword stance and skewers", "enters a half-sword stance and impales")
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
-	penfactor = PEN_BSTEEL // Halfsword — penetrates plate fully, blacksteel at 20%
+	penfactor = PEN_BLACKSTEEL // Halfsword — penetrates plate fully, blacksteel at 20%
 	clickcd = 12
 	swingdelay = 16
 	damfactor = 0.86

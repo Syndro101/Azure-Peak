@@ -20,7 +20,7 @@
 	armor = ARMOR_PLATE
 	blocksound = PLATEHIT
 	body_parts_covered = HEAD|HAIR
-	max_integrity = ARMOR_INT_HELMET_STEEL
+	max_integrity = INT_TIER_HIGH(3)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 
@@ -135,7 +135,7 @@
 	name = "mountaineer's chaperon"
 	desc = "A fashionable citygoer's chaperon worn around an insconspicuous iron skullcap. It has a cute little Mamük brooch on the tip of the hood. Szöréndnížine shepherds spend plenty of time in the city and have taken a liking to the chaperon's exaggerated swagger."
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_HELMET_IRON - 25
+	max_integrity = INT_TIER_MEDIUM(8)
 
 /obj/item/clothing/head/roguetown/chaperon/noble
 	name = "noble's chaperon"
@@ -232,7 +232,7 @@
 	item_state = "headband"
 	color = "#851a16"
 	armor = ARMOR_LEATHER
-	max_integrity = ARMOR_INT_HELMET_LEATHER
+	max_integrity = INT_TIER_MEDIUM(8)
 	body_parts_covered = HEAD|HAIR|EARS
 	sewrepair = TRUE
 	//dropshrink = 0.75
@@ -285,7 +285,7 @@
 /obj/item/clothing/head/roguetown/headband/monk/barbarian
 	name = "hunter's headband"
 	desc = "A winding length of cloth, meticulously lined with heavy leather strips. Errant impacts are thwarted, yet not a degree of vision is impaired; valuable traits, for those who have taken the mantle of confronting monsters with overwhelming strength. </br>'..All it takes for evil to triumph is for good men to do nothing.'"
-	max_integrity = ARMOR_INT_HELMET_LEATHER //Far less durable than the Monk's variant. Remember that the Barbarian retrieves solid weapon skills and armor, even as a pugilist.
+	max_integrity = INT_TIER_MEDIUM(8) //Far less durable than the Monk's variant. Remember that the Barbarian retrieves solid weapon skills and armor, even as a pugilist.
 
 /obj/item/clothing/head/roguetown/inqhat
 	name = "inquisitorial hat"

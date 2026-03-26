@@ -633,7 +633,7 @@
 	name = "otherworldly fullplate"
 	desc = "Strange iridescent full plate. It reflects light as if covered in shiny oil."
 	icon_state = "dreamplate"
-	max_integrity = ARMOR_INT_CHEST_PLATE_ANTAG
+	max_integrity = INT_TIER_HIGH(7)
 	item_flags = DREAM_ITEM
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/dreamwalker/Initialize()
@@ -680,7 +680,7 @@
 	desc = "A otherworldly squid helm. It reflects light as if covered in shiny oil."
 	adjustable = CAN_CADJUST
 	icon_state = "dreamsquidhelm"
-	max_integrity = ARMOR_INT_HELMET_ANTAG
+	max_integrity = INT_TIER_HIGH(6)
 	item_flags = DREAM_ITEM
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/32x48/head.dmi'
 	block2add = null
