@@ -609,7 +609,7 @@
 	sparked scholarly debates for the better part of a millennium; is it a star, a vortex, or the Sun? </br>A notch behind the sigil \
 	allows for the joint mounting of a plume. Nock a feather into it to show off your alliegence's colors."
 	armor = ARMOR_BRONZE
-	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
+	max_integrity = INT_TIER_HIGH(4) + INT_BRONZE_BONUS
 	material_category = ARMOR_MAT_PLATE
 	body_parts_covered = HEAD|HAIR|EARS
 	icon_state = "bronzehelmet"
@@ -649,7 +649,7 @@
 	the reenactment of Ravox's duel against Graggar atop Ur-Syon's ruins - mythologized not as a tentacled star, but as a towering doppelganger-champion; \
 	sculpted by the Archdevil to be the inverse to all who stood for justice and chivalry."
 	armor = ARMOR_BRONZE
-	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS
+	max_integrity = INT_TIER_HIGH(4) + INT_BRONZE_BONUS - INT_BRITTLE_MALUS
 	armor_class = ARMOR_CLASS_LIGHT
 	material_category = ARMOR_MAT_PLATE
 	body_parts_covered = FULL_HEAD

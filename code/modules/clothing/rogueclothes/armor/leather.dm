@@ -95,7 +95,7 @@
 	armor = ARMOR_BRIGANDINE
 	nodismemsleeves = TRUE
 	body_parts_covered = COVERAGE_TORSO
-	max_integrity = INT_TIER_HIGH(2)
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS
 	smeltresult = /obj/item/ingot/iron
 	sellprice = 25
 	armor_class = ARMOR_CLASS_LIGHT

@@ -95,7 +95,7 @@
 	icon_state = "bronzeplate"
 	item_state = "bronzeplate"
 	armor = ARMOR_BRONZE
-	max_integrity = INT_TIER_HIGH(5) + INT_BRONZE_BONUS
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS + INT_REINFORCED_BONUS
 	armor_class = ARMOR_CLASS_HEAVY
 	smeltresult = /obj/item/ingot/bronze
 	smelt_bar_num = 3
