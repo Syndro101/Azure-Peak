@@ -79,7 +79,7 @@
 || LEATHER 			||	 200/250/300	||	 200/250/300	||	 200/250/300	||	  200/250/300	||
 || BRONZE			||	 350/450		||	 350/550		||	 350			||	  350			||
 || IRON				||	 225/300		||	 225/325/375	||	 225			||	  225/300		||
-|| BRIGANDINE		||	 200/250		||	 200/250		||	 200/250		||	  200/250		||
+|| BRIGANDINE		||	 200/250/300	||	 200/250/350	||	 200/250/300	||	  200/250/300	||
 || STEEL			||	 300/400		||	 300/450/500	||	 300			||	  300/400		||
 || BLACKSTEEL		||	 500			||	 600			||	 400			||	  500			||
 || ANTAG-GEAR		||	 600			||	 700			||	 500			||	  600			||
@@ -194,7 +194,7 @@ INT_TIER_ULTRA(3) = 1500
 // LIGHT ARMOR - Split into two sidegrades: PADDED VS LEATHER
 // PADDED: Best Blunt protection, Bodkin immune. But Axe CHOP (MEDIUM) and most thrusts (LIGHT) get through. 
 // LEATHER: Decent Blunt DR. Axe CHOP (MEDIUM), sword thrust (MEDIUM) and bodkin (HEAVY) get through. Better vs stab than padded, worse vs piercing.
-#define ARMOR_PADDED list("blunt" = DR_SUPER, "slash" = DBLOCK_MEDIUM, "stab" = DBLOCK_LIGHT, "piercing" = DBLOCK_BSTEEL, "fire" = DR_MEDIUM, "acid" = DR_NONE)
+#define ARMOR_PADDED list("blunt" = DR_SUPER, "slash" = DBLOCK_MEDIUM, "stab" = DBLOCK_LIGHT, "piercing" = DBLOCK_BLACKSTEEL, "fire" = DR_MEDIUM, "acid" = DR_NONE)
 #define ARMOR_LEATHER list("blunt" = DR_ULTRA, "slash" = DBLOCK_MEDIUM, "stab" = DBLOCK_MEDIUM, "piercing" = DBLOCK_HEAVY, "fire" = DR_MEDIUM, "acid" = DR_NONE)
 
 // Iconoclast dragon skin. Fire resistant.

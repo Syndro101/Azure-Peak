@@ -29,7 +29,7 @@
 	desc = "Splint mail and brigandine chausses, designed to protect the legs while still providing almost complete free range of movement."
 	icon_state = "splintlegs"
 	item_state = "splintlegs"
-	max_integrity = ARMOR_INT_LEG_BRIGANDINE
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS
 	armor = ARMOR_BRIGANDINE
 	blocksound = SOFTHIT
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'

@@ -83,7 +83,7 @@
 	icon_state = "bronzeprotector"
 	item_state = "bronzeprotector"
 	body_parts_covered = CHEST | VITALS
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_BRONZE //250 INT, or a little above Iron - and +100 INT over the Copper variant.
+	max_integrity = INT_TIER_HIGH(2) + INT_BRONZE_BONUS //250 INT, or a little above Iron - and +100 INT over the Copper variant.
 	armor_class = ARMOR_CLASS_LIGHT
 	armor = ARMOR_BRONZE
 
@@ -95,7 +95,7 @@
 	icon_state = "bronzeplate"
 	item_state = "bronzeplate"
 	armor = ARMOR_BRONZE
-	max_integrity = ARMOR_INT_CHEST_PLATE_BRONZE + 100
+	max_integrity = INT_TIER_HIGH(5) + INT_BRONZE_BONUS
 	armor_class = ARMOR_CLASS_HEAVY
 	smeltresult = /obj/item/ingot/bronze
 	smelt_bar_num = 3
@@ -128,7 +128,7 @@
 	icon_state = "bronzeplatealt"
 	item_state = "bronzeplatealt"
 	body_parts_covered = CHEST | VITALS | LEGS
-	max_integrity = ARMOR_INT_CHEST_PLATE_BRONZE //Halfplate analogue. Still heavy as hell.
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS //Halfplate analogue. Still heavy as hell.
 
 /obj/item/clothing/suit/roguetown/armor/plate/aalloy
 	name = "decrepit half-plate"

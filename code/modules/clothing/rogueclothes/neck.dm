@@ -271,7 +271,7 @@
 	icon_state = "bbevor"
 	smeltresult = /obj/item/ingot/bronze
 	armor = ARMOR_BRONZE
-	max_integrity = ARMOR_INT_SIDE_BRONZE
+	max_integrity = INT_TIER_HIGH(3) + INT_BRONZE_BONUS - INT_ADJUSTABLE_MALUS
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/neck/roguetown/gorget
