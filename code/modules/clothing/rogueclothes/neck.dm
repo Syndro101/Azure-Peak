@@ -1110,7 +1110,7 @@
 	desc = "'Let His name be naught but forgot'n.' </br>The alloy is familiar, but unmentionable. Blood oozes from cracks within the psicross; ensnared in a perpetual state of half-coagulation. A deathly chill tugs your neck, and your cheeks feel wet - are those tears?"
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_WRISTS
 	icon_state = "psicrossblood"
-	max_integrity = 666
+	max_integrity = INT_TIER_HIGH(6) + INT_CURSED_BONUS
 	edelay_type = 1
 	equip_delay_self = 66
 	smeltresult = /obj/item/ingot/weeping

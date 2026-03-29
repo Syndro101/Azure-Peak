@@ -93,7 +93,7 @@
 	armor = ARMOR_LEATHER
 	blocksound = SOFTHIT
 	sewrepair = FALSE
-	max_integrity = 1 //You get a single 'lucky' hit as a cat
+	max_integrity = INT_TIER_LOW(1) //You get a single 'lucky' hit as a cat
 	item_flags = DROPDEL
 
 /datum/intent/simple/cat //Like a less defense dagger

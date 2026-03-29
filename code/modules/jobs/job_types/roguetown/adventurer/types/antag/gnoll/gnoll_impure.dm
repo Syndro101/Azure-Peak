@@ -39,7 +39,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/gnoll_armor/impure
 	icon_state = null
-	max_integrity = 400
+	max_integrity = INT_TIER_HIGH(4)
 	auto_repair_mode_base = 90
 	armor = ARMOR_GNOLL_WEAK
 

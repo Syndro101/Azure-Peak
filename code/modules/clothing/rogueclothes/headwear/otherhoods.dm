@@ -9,7 +9,7 @@
 	body_parts_covered = HEAD|HAIR|EARS|NECK
 	slot_flags = ITEM_SLOT_HEAD
 	dynamic_hair_suffix = ""
-	max_integrity = 80
+	max_integrity = INT_TIER_MEDIUM(3)
 	armor = ARMOR_CLOTHING
 	anvilrepair = null
 	sewrepair = TRUE
@@ -34,7 +34,7 @@
 	edelay_type = 1
 	adjustable = CANT_CADJUST
 	toggle_icon_state = FALSE
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	sewrepair = TRUE
 
 /obj/item/clothing/head/roguetown/necrahood

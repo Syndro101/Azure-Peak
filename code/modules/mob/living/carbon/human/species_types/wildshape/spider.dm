@@ -99,7 +99,7 @@
 	armor = ARMOR_LEATHER
 	blocksound = SOFTHIT
 	sewrepair = FALSE
-	max_integrity = 80 //Less than a volf's
+	max_integrity = INT_TIER_MEDIUM(3)  //Less than a volf's
 	item_flags = DROPDEL
 
 /datum/intent/simple/spider //An ambush weapon

@@ -22,7 +22,7 @@
 	gender = PLURAL
 	icon_state = "blackboots"
 	item_state = "blackboots"
-	max_integrity = 80
+	max_integrity = INT_TIER_MEDIUM(4)
 	sewrepair = TRUE
 	var/atom/movable/holdingknife = null
 	salvage_amount = 1
@@ -52,7 +52,7 @@
 /obj/item/clothing/shoes/roguetown/boots/aalloy
 	name = "decrepit boots"
 	desc = "Frayed bronze greaves, shingled atop boots of rotted leather. The toebones of its former legionnaire remain within, rattling about with every step taken."
-	max_integrity = 40
+	max_integrity = INT_TIER_MEDIUM(6) - INT_DECREPIT_MALUS
 	icon_state = "ancientboots"
 	smeltresult = /obj/item/ingot/aaslag
 	color = "#bb9696"
@@ -191,7 +191,7 @@
 	desc = "Polished gilbranze platforms, laced with bog-reeds to remain secured beneath skeletal soles. A thousand yils later, and they still clack-and-clop like new."
 	icon_state = "ancientsandals"
 	color = null
-	max_integrity = 100			//Half that of iron boots
+	max_integrity = INT_TIER_MEDIUM(4)
 	armor = ARMOR_LEATHER			//Better than regular leather.
 
 /obj/item/clothing/shoes/roguetown/shalal
@@ -223,7 +223,7 @@
 	desc = "Sturdy boots stitched together from cured leather. Stylish, firm, and sport a satisfying 'squeek' with each step."
 	icon_state = "alboots"
 	item_state = "alboots"
-	max_integrity = 100			//Half that of iron boots
+	max_integrity = INT_TIER_MEDIUM(4)
 	armor = ARMOR_LEATHER			//Better than regular leather.
 	color = null
 
@@ -470,7 +470,7 @@
 	icon_state = "furlinedboots"
 	item_state = "furlinedboots"
 	sewrepair = TRUE
-	max_integrity = 160
+	max_integrity = INT_TIER_MEDIUM(6)
 	armor = ARMOR_CLOTHING
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/fur

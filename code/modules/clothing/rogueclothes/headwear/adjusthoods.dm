@@ -19,7 +19,7 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	sewrepair = TRUE
 	block2add = FOV_BEHIND
 	salvage_result = /obj/item/natural/cloth
@@ -95,7 +95,7 @@
 	toggle_icon_state = TRUE
 	hidesnoutADJ = TRUE
 	blocksound = SOFTHIT
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	sewrepair = TRUE
 	mask_override = TRUE
 	overarmor = FALSE
@@ -121,7 +121,7 @@
 	name = "padded headscarf"
 	desc = "A common sight amongst those travelling the long desert routes, it offers protection from the heat and a modicum of it against the beasts that prowl its more comfortable nites."
 	slot_flags = ITEM_SLOT_HEAD
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	armor = ARMOR_LEATHER //basically the same as a warscholar hood
 	item_state = "hijab"
 	icon_state = "hijab"
@@ -157,7 +157,7 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 180
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS
 	resistance_flags = FIRE_PROOF
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
@@ -173,7 +173,7 @@
 	item_state = "astratahoodmasked"
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 180
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi' //Uses the new 'greatplume + orle' system. If this glitches out, I made sure to include a fully-prepared 32x32 version - with details - in head.dmi.
@@ -192,7 +192,7 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 180
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
@@ -209,7 +209,7 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 180
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
@@ -229,7 +229,7 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 180
+	max_integrity = INT_TIER_MEDIUM(8) - INT_BRITTLE_MALUS
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
@@ -346,7 +346,7 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
@@ -364,14 +364,14 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	salvage_result = /obj/item/natural/cloth
 	salvage_amount = 1
 
 /obj/item/clothing/head/roguetown/roguehood/hierophant
 	name = "hierophant's pashmina"
 	desc = "A thick hood that covers one's entire head, should they desire, or merely acts as a scarf otherwise. Made with spell-laced fabric to provide some protection against daemons and mortals alike."
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	armor = ARMOR_LEATHER
 	icon_state = "hijab"
 	item_state = "hijab"
@@ -382,7 +382,7 @@
 /obj/item/clothing/head/roguetown/roguehood/pontifex
 	name = "pontifex's pashmina"
 	desc = "A slim hood with thin, yet dense fabric. Stretchy and malleable, allowing for full flexibility and mobility. Made with spell-laced fabric to provide some protection against daemons and mortals alike."
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	armor = ARMOR_LEATHER
 	icon_state = "monkhood"
 	item_state = "monkhood"

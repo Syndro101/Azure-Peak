@@ -161,7 +161,7 @@
 	</br>Heaven's gate closed to us long ago, yet His children persist; as as long as they do, so must I. \
 	</br>Happiness must be fought for."
 	armor = ARMOR_PADDED
-	max_integrity = 400
+	max_integrity = INT_TIER_HIGH(4)
 	repair_time = 20 SECONDS
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/iconoclast
@@ -173,13 +173,13 @@
 	Oh no, not me, I never lost control.</br> \
 	You're face to face, with the man who sold the world."
 	armor = ARMOR_DRAGONSKIN
-	max_integrity = 450
+	max_integrity = INT_TIER_HIGH(4) + INT_REINFORCED_BONUS
 	repair_time = 20 SECONDS
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/disciple/barbarian
 	name = "barbarian's skin"
 	desc = "Toughened from abuse. My mettle remains."
-	max_integrity = 200
+	max_integrity = INT_TIER_HIGH(2)
 	repair_time = 25 SECONDS
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/disciple/berserker
@@ -190,7 +190,7 @@
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/disciple/bailiff
 	name = "executioneer's skin"
 	desc = "Bearing scars of countless whips leaves a gnarly visage. Now it's your time to inflict the same fate upon others."
-	max_integrity = 250
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/easttats
 	name = "bouhoi bujeog tattoos"
@@ -204,7 +204,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/shirts.dmi'
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_shirts.dmi'
 	allowed_race = NON_DWARVEN_RACE_TYPES
-	max_integrity = 250
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS
 
 	repairmsg_begin = "The tattoos begin to slowly mend their abuse..."
 	repairmsg_continue = "The tattoos mend some of their abuse..."
@@ -217,5 +217,5 @@
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/disciple/gladiator
 	name = "gladiator's skin"
 	desc = "Are you not entertained?!"
-	max_integrity = 200
+	max_integrity = INT_TIER_HIGH(2)
 	repair_time = 25 SECONDS

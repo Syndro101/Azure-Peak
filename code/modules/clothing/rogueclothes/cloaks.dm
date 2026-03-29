@@ -1286,7 +1286,7 @@
 	name = "dragonscale necklace" //Who the hell put a NECKLACE in the CLOAKS file?
 	desc = "A blacksteel chain, laced through a dozen of the Hoardmaster's golden teeth. Atuned to the beating heart of Psydonia's financial systems, its true strength can only be harnessed by those who covet wealth above all else."
 	icon_state = "dragonnecklace"
-	max_integrity = INT_TIER_MEDIUM(9) //Iron gorget now.
+	max_integrity = INT_TIER_MEDIUM(9)
 	armor = ARMOR_PLATE
 	blocksound = PLATEHIT
 	//dropshrink = 0.75

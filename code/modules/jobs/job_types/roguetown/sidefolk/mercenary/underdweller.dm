@@ -75,7 +75,7 @@
 	var/on = FALSE
 	light_outer_range = 5 	//Same as a lamptern; can't be extinguished either.
 	light_power = 1
-	max_integrity = 250		//Slightly better integrity. Just because unique kettle. Plus class doesn't have much going for it traits-wise.
+	max_integrity = INT_TIER_HIGH(2) + INT_REINFORCED_BONUS //Slightly better integrity. Just because unique kettle. Plus class doesn't have much going for it traits-wise.
 	light_color = LIGHT_COLOR_ORANGE
 	light_system = MOVABLE_LIGHT
 

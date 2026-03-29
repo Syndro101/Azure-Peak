@@ -103,7 +103,7 @@
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = FALSE
-	max_integrity = 400 
+	max_integrity = INT_TIER_HIGH(4)
 	item_flags = DROPDEL
 
 /datum/intent/simple/mole

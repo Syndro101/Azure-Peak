@@ -12,7 +12,7 @@
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = FALSE
-	max_integrity = 475
+	max_integrity = INT_TIER_HIGH(5) - INT_BRITTLE_MALUS
 	item_flags = DROPDEL
 
 	auto_repair_mode = TRUE

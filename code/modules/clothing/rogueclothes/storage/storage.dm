@@ -9,7 +9,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_NORMAL
 	attack_verb = list("whips", "lashes")
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	equip_sound = 'sound/blank.ogg'
 	content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
@@ -174,7 +174,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
 	resistance_flags = FIRE_PROOF
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 10
 	equip_sound = 'sound/blank.ogg'
 	bloody_icon_state = "bodyblood"
@@ -240,7 +240,7 @@
 	slot_flags = ITEM_SLOT_CLOAK|ITEM_SLOT_BELT //Implement a check that prevents one from being worn on both slots at once. Another coder's duty, I think.
 	edelay_type = 1
 	equip_delay_self = 10
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	component_type = /datum/component/storage/concrete/roguetown/satchel
 
 /obj/item/storage/belt/rogue/leather/sash/maid
@@ -260,7 +260,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK_L
 	resistance_flags = FIRE_PROOF
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	sellprice = 15
 	equip_sound = 'sound/blank.ogg'
 	bloody_icon_state = "bodyblood"
@@ -276,7 +276,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK_L
 	resistance_flags = FIRE_PROOF
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	equip_sound = 'sound/blank.ogg'
 	bloody_icon_state = "bodyblood"
 	sewrepair = FALSE
@@ -288,7 +288,7 @@
 	icon_state = "rucksack_untied"
 	item_state = "rucksack"
 	component_type = /datum/component/storage/concrete/roguetown/sack/bag
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	sewrepair = TRUE
 	var/tied = FALSE
 
@@ -455,7 +455,7 @@
 	item_state = "ironheadhook"
 	slot_flags = ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_NORMAL
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	equip_sound = 'sound/blank.ogg'
 	//content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
@@ -472,7 +472,7 @@
 	item_state = "bronzeheadhook"
 	slot_flags = ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_NORMAL
-	max_integrity = 400
+	max_integrity = INT_TIER_HIGH(4)
 	equip_sound = 'sound/blank.ogg'
 	//content_overlays = FALSE
 	bloody_icon_state = "bodyblood"
@@ -500,7 +500,7 @@
 	item_state = "grabbing"
 	icon_state = "grabbing"
 	icon = 'icons/mob/roguehudgrabs.dmi'
-	max_integrity = 10
+	max_integrity = INT_TIER_LOW(2)
 	w_class = WEIGHT_CLASS_HUGE
 	item_flags = ABSTRACT
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
@@ -528,7 +528,7 @@
 	item_state = "rucksack"
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_BACK 
 	w_class = WEIGHT_CLASS_NORMAL
-	max_integrity = 400
+	max_integrity = INT_TIER_HIGH(4)
 	equip_sound = 'sound/blank.ogg'
 	//content_overlays = FALSE
 	anvilrepair = /datum/skill/craft/blacksmithing
@@ -548,7 +548,7 @@
 	resistance_flags = FIRE_PROOF
 	equip_delay_self = 5 SECONDS
 	unequip_delay_self = 5 SECONDS
-	max_integrity = 0
+	max_integrity = INT_TIER_NONE
 	sellprice = 15
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64

@@ -95,7 +95,7 @@
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = FALSE
-	max_integrity = 120 //Less than leather, it's full-body and foments hit and run
+	max_integrity = INT_TIER_MEDIUM(5) //Less than leather, it's full-body and foments hit and run
 	item_flags = DROPDEL
 
 /datum/intent/simple/volf //Like a less defense dagger

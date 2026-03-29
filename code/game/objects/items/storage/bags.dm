@@ -105,7 +105,7 @@
 	slot_flags = ITEM_SLOT_BACK_L|ITEM_SLOT_BACK_R|ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_NORMAL
 	resistance_flags = NONE
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	component_type = /datum/component/storage/concrete/grid/meatsack
 
 /obj/item/storage/meatbag/attack_right(mob/user)

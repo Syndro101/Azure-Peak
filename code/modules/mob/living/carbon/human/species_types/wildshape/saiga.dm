@@ -94,7 +94,7 @@
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = FALSE
-	max_integrity = 150 //Same as leather
+	max_integrity = INT_TIER_MEDIUM(6) //Same as leather
 	item_flags = DROPDEL
 
 /datum/intent/simple/saiga //Like a less defense dagger

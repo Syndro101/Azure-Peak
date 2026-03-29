@@ -17,4 +17,4 @@
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK	//ERROOOOO
 	resistance_flags = NONE
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)

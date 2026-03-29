@@ -758,7 +758,7 @@
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
 	sleevetype = "shirt"
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	anvilrepair = /datum/skill/craft/armorsmithing
 	equip_delay_self = 4 SECONDS
 	armor_class = ARMOR_CLASS_LIGHT
@@ -795,7 +795,7 @@
 	icon_state = "inqcoata"
 	item_state = "inqcoata"
 	equip_delay_self = 4 SECONDS
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	armor_class = ARMOR_CLASS_MEDIUM
 	armor = ARMOR_PLATE
 	smelt_bar_num = 2

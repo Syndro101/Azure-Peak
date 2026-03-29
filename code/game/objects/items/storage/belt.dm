@@ -6,7 +6,7 @@
 	item_state = "utility"
 	slot_flags = ITEM_SLOT_BELT
 	attack_verb = list("whipped", "lashed", "disciplined")
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	equip_sound = 'sound/blank.ogg'
 	var/content_overlays = FALSE //If this is true, the belt will gain overlays based on what it's holding
 

@@ -135,7 +135,7 @@
 		/datum/species/dwarf/mountain
 		)
 	surgery_cover = FALSE 
-	max_integrity = 135
+	max_integrity = INT_TIER_MEDIUM(5)
 	sewrepair = FALSE
 	repairmsg_begin = "The thick skin cover starts to bulge and repair tears"
 	repairmsg_continue = "More of the tears on the skin close up"

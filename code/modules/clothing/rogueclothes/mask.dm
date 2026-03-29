@@ -54,7 +54,7 @@
 	icon_state = "glasses"
 	break_sound = "glassbreak"
 	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
-	max_integrity = 20
+	max_integrity = INT_TIER_LOW(4)
 	integrity_failure = 0.5
 	resistance_flags = FIRE_PROOF
 	body_parts_covered = EYES
@@ -67,7 +67,7 @@
 	icon_state = "bglasses"
 	desc = "Made to both ENDURE and incite debate within those few Noc-Sainted within Otava. Noc-lit walks, yae or nae? The lenses look like they can be brushed aside with a carefully guided right-pointer finger led motion."
 	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
-	max_integrity = 300
+	max_integrity = INT_TIER_HIGH(3)
 	integrity_failure = 0.5
 	resistance_flags = FIRE_PROOF
 	body_parts_covered = EYES
@@ -120,7 +120,7 @@
 	icon_state = "goggles"
 	break_sound = "glassbreak"
 	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
-	max_integrity = 35
+	max_integrity = INT_TIER_LOW(7)
 	integrity_failure = 0.5
 	resistance_flags = FIRE_PROOF
 	body_parts_covered = EYES
@@ -181,7 +181,7 @@
 	name = "eyepatch"
 	desc = "An eyepatch, fitted for the right eye."
 	icon_state = "eyepatch"
-	max_integrity = 20
+	max_integrity = INT_TIER_LOW(4)
 	integrity_failure = 0.5
 	block2add = FOV_RIGHT
 	body_parts_covered = EYES
@@ -215,7 +215,7 @@
 	blocksound = SOFTHIT
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK
 	flags_inv = HIDEFACE|HIDESNOUT|HIDEHAIR|HIDEEARS
 	body_parts_covered = FACE|HEAD
@@ -233,7 +233,7 @@
 	name = "strange mask"
 	desc = "It is said that the original version of this mask was used for obscure rituals prior to the fall of the Empire of the Holy Celestia, and now it has been repurposed as a veil for the cunning hand of the Otavan Orthodoxy.<br> <br>Others say it is a piece of heresy, a necessary evil, capable of keeping its user safe from left-handed magicks. You can taste copper whenever you draw breath."
 	icon_state = "confessormask"
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	equip_sound = 'sound/items/confessormaskon.ogg'
 	smeltresult = /obj/item/ingot/steel
 	var/worn = FALSE
@@ -305,7 +305,7 @@
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	resistance_flags = FIRE_PROOF
 	armor = ARMOR_PLATE
 	flags_inv = HIDEFACE|HIDESNOUT
@@ -320,7 +320,7 @@
 	name = "iron mask"
 	desc = "A simple, utilitarian mask designed to protect the face from oncoming blows."
 	icon_state = "imask"
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
@@ -349,7 +349,7 @@
 	name = "decrepit mask"
 	desc = "Frayed bronze, molded into an unblinking visage. Only the statues, buried within the innards of Mount Decapitation, share its wrinkled lip and sneer of cold command."
 	icon_state = "ancientmask"
-	max_integrity = 75
+	max_integrity = INT_TIER_MEDIUM(8) - INT_DECREPIT_MALUS
 	color = "#bb9696"
 	chunkcolor = "#532e25"
 	material_category = ARMOR_MAT_PLATE
@@ -370,7 +370,7 @@
 	armor_class = ARMOR_CLASS_LIGHT
 	icon_state = "bronzemask"
 	item_state = "bronzemask"
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(4) + INT_BRONZE_BONUS
 	smeltresult = /obj/item/ingot/bronze
 
 /obj/item/clothing/mask/rogue/facemask/bronze/classic
@@ -400,7 +400,7 @@
 	desc = "Expressionless steel sits where a face ought to be. It is better to be \
 	safe than to be known."
 	icon_state = "smask"
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/mask/rogue/facemask/steel/paalloy
@@ -413,7 +413,7 @@
 /obj/item/clothing/mask/rogue/facemask/steel/steppesman
 	name = "steppesman war mask"
 	desc = "A steel mask shaped like the face of a rather charismatic fellow! Pronounced cheeks, a nose, and a large mustache. Well, people outside of Aavnr don't think you'd look charismatic at all wearing this."
-	max_integrity = 250
+	max_integrity = INT_TIER_MEDIUM(10)
 	icon_state = "steppemask"
 	layer = HEAD_LAYER
 
@@ -425,14 +425,14 @@
 /obj/item/clothing/mask/rogue/facemask/goldmask
 	name = "gold mask"
 	icon_state = "goldmask"
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(6)
 	sellprice = 100
 	smeltresult = /obj/item/ingot/gold
 
 /obj/item/clothing/mask/rogue/facemask/goldmaskc
 	name = "gold mask"
 	icon_state = "goldmaskc"
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(6)
 	sellprice = 100
 	smeltresult = /obj/item/ingot/gold
 
@@ -499,7 +499,7 @@
 	name = "skull mask"
 	desc = "A mask in the shape of a skull, designed to terrify."
 	icon_state = "skullmask"
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
@@ -538,7 +538,7 @@
 	item_state = "naledimask"
 	icon_state = "naledimask"
 	desc = "Runes and wards, meant for daemons; the gold has somehow rusted in unnatural, impossible agony. The most prominent of these etchings is in the shape of the Naledian psycross. Armored to protect the wearer's face."
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	armor = ARMOR_PLATE
 	flags_inv = HIDEFACE|HIDESNOUT
 	sellprice = 0
@@ -551,7 +551,7 @@
 	item_state = "naledimask"
 	icon_state = "naledimask"
 	desc = "A golden mask, gnarled by the sustained agonies of djinnic corruption; yet as long as its Naledian hexes endure, so too will its wearer. Hand-fitted shingles flank the sides to repel incoming strikes. </br>'..Clad with the stereotype of abruptly disappearing without any forewarning, the typical Sojourner is in constant pursuit of diversifying their erudition. One might arrive to learn the local witch's recipe of sanctifying atropa extract and spend yils in the community trying to master it, while another might work alongside the region's Orthodoxic chapter to slay a lycker lord in exchange for his archive, only to vanish the very next day..'"
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(6)
 	armor = ARMOR_PLATE
 	flags_inv = HIDEFACE|HIDESNOUT
 	sellprice = 0
@@ -612,7 +612,7 @@
 	name = "carved mask"
 	icon_state = "ancientmask"
 	desc = "You shouldn't be seeing this."
-	max_integrity = 50
+	max_integrity = INT_TIER_MEDIUM(2)
 	blocksound = PLATEHIT
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
@@ -686,7 +686,7 @@
 	item_state = "xylixmask"
 	icon_state = "xylixmask"
 	desc = "A ceramic mask, forever stuck with the joyful smile its patron god favors. While it will shatter easily from blows, its smug countenance shall taunt its foes."
-	max_integrity = 50
+	max_integrity = INT_TIER_MEDIUM(2)
 	armor = null
 	flags_inv = HIDEFACE|HIDESNOUT
 	body_parts_covered = FACE

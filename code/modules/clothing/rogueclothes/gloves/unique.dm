@@ -21,7 +21,7 @@
 	icon_state = "clothwraps"
 	item_state = "clothwraps"
 	armor = ARMOR_PADDED_BAD //Light padding — worse than leather gloves, but offers some cushioning.
-	max_integrity = 200
+	max_integrity = INT_TIER_HIGH(2)
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
@@ -103,7 +103,7 @@
 	name = "decrepit knuckles"
 	desc = "A set of knuckles made of ancient metals, Aeon's grasp withers their form."
 	icon_state = "aknuckle"
-	max_integrity = 50 //Extra fragile — ancient and degraded.
+	max_integrity = INT_TIER_MEDIUM(6) - INT_DECREPIT_MALUS
 	smeltresult = /obj/item/ingot/aalloy
 	unarmed_bonus = 4
 
@@ -118,4 +118,4 @@
 	name = "close caress"
 	desc = "Some times call for a more intimate approach."
 	icon_state = "eoraknuckle"
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(6)

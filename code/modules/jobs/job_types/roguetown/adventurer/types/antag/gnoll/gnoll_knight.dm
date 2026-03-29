@@ -35,7 +35,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/gnoll_armor/knight
 	icon_state = "knight"
-	max_integrity = 800
+	max_integrity = INT_TIER_HIGH(8)
 	armor = ARMOR_GNOLL_STRONG
 	// Stronger, so repair less armor when it repairs
 	auto_repair_mode_base = 75

@@ -86,7 +86,7 @@
 	armor = ARMOR_LEATHER
 	blocksound = SOFTHIT
 	sewrepair = FALSE
-	max_integrity = 1
+	max_integrity = INT_TIER_LOW(1)
 	item_flags = DROPDEL
 
 /datum/intent/simple/cabbit

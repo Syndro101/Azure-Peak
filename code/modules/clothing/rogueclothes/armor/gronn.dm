@@ -55,7 +55,7 @@
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	unarmed_bonus = 6
-	max_integrity = 250
+	max_integrity = INT_TIER_MEDIUM(10)
 	color = "#ffffff"
 
 /obj/item/clothing/head/roguetown/helmet/leather/shaman_hood

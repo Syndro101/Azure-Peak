@@ -8,7 +8,7 @@
 	obj_flags = CAN_BE_HIT | UNIQUE_RENAME
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	blade_dulling = DULLING_CUT
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	integrity_failure = 0.1
 	throw_speed = 0.5
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'

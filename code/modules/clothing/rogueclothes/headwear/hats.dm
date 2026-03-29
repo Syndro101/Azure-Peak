@@ -292,7 +292,7 @@
 	desc = "A fine leather slouch, beplumed with a crimson feather and fitted with a hidden steel skull cap. It serves as a reminder that the Holy Otavan Inquisition triumphs in one avenue above all else - fashion. </br>'To keep ones vision away from the heavens, and focused on the sin beneath the soil.'"
 	icon_state = "inqhat"
 	item_state = "inqhat"
-	max_integrity = 200
+	max_integrity = INT_TIER_MEDIUM(8)
 	armor = ARMOR_LEATHER
 	body_parts_covered = HEAD|HAIR|EARS
 	sewrepair = TRUE
@@ -477,7 +477,7 @@
 	body_parts_covered = HEAD|HAIR|EARS|NOSE
 	icon_state = "tricorn"
 	armor = ARMOR_CLOTHING
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	anvilrepair = null
 	smeltresult = null
 	sewrepair = TRUE
@@ -525,7 +525,7 @@
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	blocksound = SOFTHIT
-	max_integrity = 100
+	max_integrity = INT_TIER_MEDIUM(4)
 	sewrepair = TRUE
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head_items.dmi'
 

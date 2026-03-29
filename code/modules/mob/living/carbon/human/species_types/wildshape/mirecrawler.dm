@@ -100,7 +100,7 @@
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	sewrepair = FALSE
-	max_integrity = 80 
+	max_integrity = INT_TIER_MEDIUM(4) - INT_BRITTLE_MALUS
 	item_flags = DROPDEL
 
 /obj/item/rogueweapon/spider_fang/mire //Like a less defense dagger

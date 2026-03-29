@@ -1099,8 +1099,8 @@
 /obj/item/rogueweapon/sword/astrata_sword
 	name = "Solar Sabre"
 	desc = "More a holy tool of ceremony than a weapon of her fury.\
-	  It harshly radiates sacred light, rebuking rot and darkness alike; \
-	  it is a ruler's blade, knight your soldiers and cleanse their wounds."
+		It harshly radiates sacred light, rebuking rot and darkness alike; \
+		it is a ruler's blade, knight your soldiers and cleanse their wounds."
 	force = 15			//more comparable to a dagger than a sword, for it is ultimately a tool
 	force_wielded = 20
 	max_blade_int = 400 //Astrata made this out of light not dull, duh.

@@ -197,7 +197,7 @@
 	desc = "A circlet of thorns often worn by devout followers of Dendor. Designed to dig \
 	into the flesh just enough to ground the wearer's sanity."
 	icon_state = "briarthorns"
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(6)
 	body_parts_covered = HEAD|HAIR|EARS
 	armor = ARMOR_CLOTHING
 	salvage_result = /obj/item/natural/fibers

@@ -36,5 +36,5 @@
 
 /obj/item/clothing/suit/roguetown/armor/regenerating/skin/gnoll_armor/templar
 	icon_state = "templar"
-	max_integrity = 600
+	max_integrity = INT_TIER_HIGH(6)
 	armor = ARMOR_GNOLL_STANDARD

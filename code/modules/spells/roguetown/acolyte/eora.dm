@@ -18,7 +18,7 @@
 	throw_range = 3
 	equip_delay_other = 10 SECONDS
 	// Pretty fragile
-	max_integrity = 150
+	max_integrity = INT_TIER_MEDIUM(6)
 
 /obj/item/clothing/head/peaceflower/equipped(mob/living/carbon/human/user, slot)
 	. = ..()

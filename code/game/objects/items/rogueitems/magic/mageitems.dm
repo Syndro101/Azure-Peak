@@ -7,7 +7,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_HIP
 	resistance_flags = NONE
-	max_integrity = 300
+	max_integrity = INT_TIER_MEDIUM(8)
 	component_type = /datum/component/storage/concrete/grid/magebag
 
 /obj/item/storage/magebag/examine(mob/user)
